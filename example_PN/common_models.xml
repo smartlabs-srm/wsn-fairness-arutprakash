@@ -1,0 +1,1446 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <labels x="733" y="169" width="152" height="46" border="true">
+            <text>check if Cond1 &gt;3
+check if Cond2 &gt; 5
+check if Cond3 &gt;4</text>
+        </labels>
+        <labels x="1043" y="47" width="47" height="15" border="true">
+            <text>Choice</text>
+        </labels>
+        <labels x="1380" y="15" width="47" height="15" border="true">
+            <text>Choice</text>
+        </labels>
+        <labels x="83" y="343" width="102" height="31" border="true">
+            <text>Concurrency
+</text>
+        </labels>
+        <labels x="309" y="55" width="102" height="16" border="true">
+            <text>Conditioning</text>
+        </labels>
+        <labels x="1385" y="59" width="51" height="15" border="true">
+            <text>Counter</text>
+        </labels>
+        <labels x="635" y="346" width="101" height="45" border="true">
+            <text>Duplicating Token Instances</text>
+        </labels>
+        <labels x="44" y="40" width="102" height="61" border="true">
+            <text>Infinite Producing Server
+</text>
+        </labels>
+        <labels x="1327" y="330" width="102" height="31" border="true">
+            <text>Interleaving Dependency</text>
+        </labels>
+        <labels x="334" y="336" width="102" height="31" border="true">
+            <text>K-Bounding a Transition</text>
+        </labels>
+        <labels x="605" y="44" width="132" height="41" border="true">
+            <text>MultipleConditioning
+(At the same time)</text>
+        </labels>
+        <labels x="998" y="353" width="101" height="30" border="true">
+            <text>Process Dependency</text>
+        </labels>
+        <place id="choice1_selected">
+            <graphics>
+                <position x="945.0" y="228.75"/>
+            </graphics>
+            <name>
+                <value>choice1_selected</value>
+                <graphics>
+                    <offset x="65.0" y="58.75"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="choice2_selected">
+            <graphics>
+                <position x="1125.0" y="228.75"/>
+            </graphics>
+            <name>
+                <value>choice2_selected</value>
+                <graphics>
+                    <offset x="55.0" y="56.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="CompressedMessage">
+            <graphics>
+                <position x="1348.75" y="651.25"/>
+            </graphics>
+            <name>
+                <value>CompressedMessage</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cond1">
+            <graphics>
+                <position x="581.25" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Cond1</value>
+                <graphics>
+                    <offset x="36.66666666666664" y="-11.666666666666664"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,19</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cond2">
+            <graphics>
+                <position x="656.25" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Cond2</value>
+                <graphics>
+                    <offset x="35.0" y="-11.666666666666664"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,15</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cond3">
+            <graphics>
+                <position x="731.25" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Cond3</value>
+                <graphics>
+                    <offset x="48.333333333333314" y="-13.333333333333334"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,24</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="DependentProcess1">
+            <graphics>
+                <position x="915.0" y="423.75"/>
+            </graphics>
+            <name>
+                <value>DependentProcess1</value>
+                <graphics>
+                    <offset x="58.75" y="-10.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="DependentProcess2">
+            <graphics>
+                <position x="1095.0" y="423.75"/>
+            </graphics>
+            <name>
+                <value>DependentProcess2</value>
+                <graphics>
+                    <offset x="80.0" y="-8.75"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="DoSomethingProcess1">
+            <graphics>
+                <position x="906.25" y="605.0"/>
+            </graphics>
+            <name>
+                <value>DoSomethingProcess1</value>
+                <graphics>
+                    <offset x="62.5" y="55.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Duplicate">
+            <graphics>
+                <position x="761.25" y="552.5"/>
+            </graphics>
+            <name>
+                <value>Duplicate</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="gaurd">
+            <graphics>
+                <position x="337.5" y="408.75"/>
+            </graphics>
+            <name>
+                <value>gaurd</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,3</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="GreaterThan3">
+            <graphics>
+                <position x="352.5" y="210.0"/>
+            </graphics>
+            <name>
+                <value>GreaterThan3</value>
+                <graphics>
+                    <offset x="66.66666666666666" y="56.66666666666667"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Message">
+            <graphics>
+                <position x="1438.75" y="381.25"/>
+            </graphics>
+            <name>
+                <value>Message</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,3</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Messages">
+            <graphics>
+                <position x="438.75" y="412.5"/>
+            </graphics>
+            <name>
+                <value>Messages</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,8</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Num_SentMessages">
+            <graphics>
+                <position x="393.75" y="588.75"/>
+            </graphics>
+            <name>
+                <value>Num_SentMessages</value>
+                <graphics>
+                    <offset x="77.5" y="66.25"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Num_TransitionFired">
+            <graphics>
+                <position x="1380.0" y="195.0"/>
+            </graphics>
+            <name>
+                <value>Num_TransitionFired</value>
+                <graphics>
+                    <offset x="80.0" y="70.00000000000001"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Process1">
+            <graphics>
+                <position x="135.0" y="416.25"/>
+            </graphics>
+            <name>
+                <value>Process1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Process1 Locked">
+            <graphics>
+                <position x="1095.0" y="596.25"/>
+            </graphics>
+            <name>
+                <value>Process1 Locked</value>
+                <graphics>
+                    <offset x="76.25" y="57.5"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="SingleMessage">
+            <graphics>
+                <position x="1378.75" y="531.25"/>
+            </graphics>
+            <name>
+                <value>SingleMessage</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="status">
+            <graphics>
+                <position x="1333.75" y="396.25"/>
+            </graphics>
+            <name>
+                <value>status</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Thread1">
+            <graphics>
+                <position x="93.75" y="551.25"/>
+            </graphics>
+            <name>
+                <value>Thread1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Thread2">
+            <graphics>
+                <position x="191.25" y="551.25"/>
+            </graphics>
+            <name>
+                <value>Thread2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="ToChoose">
+            <graphics>
+                <position x="1035.0" y="78.75"/>
+            </graphics>
+            <name>
+                <value>ToChoose</value>
+                <graphics>
+                    <offset x="94.16666666666666" y="6.666666666666665"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="TokenInstances">
+            <graphics>
+                <position x="671.25" y="428.75"/>
+            </graphics>
+            <name>
+                <value>TokenInstances</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="TokenProduced">
+            <graphics>
+                <position x="105.0" y="210.0"/>
+            </graphics>
+            <name>
+                <value>TokenProduced</value>
+                <graphics>
+                    <offset x="11.666666666666666" y="61.66666666666664"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="UseLater">
+            <graphics>
+                <position x="652.5" y="608.75"/>
+            </graphics>
+            <name>
+                <value>UseLater</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="VariableA">
+            <graphics>
+                <position x="352.5" y="90.0"/>
+            </graphics>
+            <name>
+                <value>VariableA</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,4</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="AcceptMessage">
+            <graphics>
+                <position x="1378.75" y="471.25"/>
+            </graphics>
+            <name>
+                <value>AcceptMessage</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="AllTestsTrue">
+            <graphics>
+                <position x="656.25" y="195.0"/>
+            </graphics>
+            <name>
+                <value>AllTestsTrue</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CallFunction">
+            <graphics>
+                <position x="198.75" y="637.5"/>
+            </graphics>
+            <name>
+                <value>CallFunction</value>
+                <graphics>
+                    <offset x="50.0" y="41.25"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CheckCondition">
+            <graphics>
+                <position x="352.5" y="150.0"/>
+            </graphics>
+            <name>
+                <value>CheckCondition</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Choice1">
+            <graphics>
+                <position x="945.0" y="138.75"/>
+            </graphics>
+            <name>
+                <value>Choice1</value>
+                <graphics>
+                    <offset x="18.75" y="1.25"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Choice2">
+            <graphics>
+                <position x="1125.0" y="138.75"/>
+            </graphics>
+            <name>
+                <value>Choice2</value>
+                <graphics>
+                    <offset x="68.75" y="-10.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CompressMessage">
+            <graphics>
+                <position x="1378.75" y="591.25"/>
+            </graphics>
+            <name>
+                <value>CompressMessage</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="DoSomething">
+            <graphics>
+                <position x="93.75" y="641.25"/>
+            </graphics>
+            <name>
+                <value>DoSomething</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="FireATranstion">
+            <graphics>
+                <position x="1380.0" y="125.0"/>
+            </graphics>
+            <name>
+                <value>FireATranstion</value>
+                <graphics>
+                    <offset x="62.49999999999997" y="-4.166666666666669"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Fork">
+            <graphics>
+                <position x="138.75" y="491.25"/>
+            </graphics>
+            <name>
+                <value>Fork</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="LockProcess2">
+            <graphics>
+                <position x="915.0" y="513.75"/>
+            </graphics>
+            <name>
+                <value>LockProcess2</value>
+                <graphics>
+                    <offset x="7.916666666666558" y="55.83333333333334"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="MakeACopy">
+            <graphics>
+                <position x="660.0" y="477.5"/>
+            </graphics>
+            <name>
+                <value>MakeACopy</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ProduceToken">
+            <graphics>
+                <position x="105.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>ProduceToken</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SendMessage">
+            <graphics>
+                <position x="1468.75" y="636.25"/>
+            </graphics>
+            <name>
+                <value>SendMessage</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SndMessage">
+            <graphics>
+                <position x="397.5" y="498.75"/>
+            </graphics>
+            <name>
+                <value>SndMessage</value>
+                <graphics>
+                    <offset x="-16.666666666666664" y="36.66666666666667"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="StartProcess2">
+            <graphics>
+                <position x="1095.0" y="513.75"/>
+            </graphics>
+            <name>
+                <value>StartProcess2</value>
+                <graphics>
+                    <offset x="124.58333333333329" y="30.833333333333314"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="AcceptMessage to SingleMessage" source="AcceptMessage" target="SingleMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1388" y="486" curvePoint="false"/>
+            <arcpath id="001" x="1388" y="527" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Choice1 to choice1_selected" source="Choice1" target="choice1_selected">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="955" y="153" curvePoint="false"/>
+            <arcpath id="001" x="955" y="225" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Choice2 to choice2_selected" source="Choice2" target="choice2_selected">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1135" y="153" curvePoint="false"/>
+            <arcpath id="001" x="1135" y="225" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CompressedMessage to SendMessage" source="CompressedMessage" target="SendMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1373" y="660" curvePoint="false"/>
+            <arcpath id="001" x="1473" y="647" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CompressMessage to CompressedMessage" source="CompressMessage" target="CompressedMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1388" y="606" curvePoint="false"/>
+            <arcpath id="001" x="1366" y="648" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cond1 to AllTestsTrue" source="Cond1" target="AllTestsTrue">
+            <graphics/>
+            <inscription>
+                <value>Default,3</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="602" y="141" curvePoint="false"/>
+            <arcpath id="001" x="658" y="200" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cond2 to AllTestsTrue" source="Cond2" target="AllTestsTrue">
+            <graphics/>
+            <inscription>
+                <value>Default,5</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="666" y="145" curvePoint="false"/>
+            <arcpath id="001" x="665" y="200" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cond3 to AllTestsTrue" source="Cond3" target="AllTestsTrue">
+            <graphics/>
+            <inscription>
+                <value>Default,4</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="731" y="141" curvePoint="false"/>
+            <arcpath id="001" x="672" y="201" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DependentProcess1 to LockProcess2" source="DependentProcess1" target="LockProcess2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="925" y="448" curvePoint="false"/>
+            <arcpath id="001" x="925" y="518" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DependentProcess1 to StartProcess2" source="DependentProcess1" target="StartProcess2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="938" y="441" curvePoint="false"/>
+            <arcpath id="001" x="1090" y="525" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DependentProcess2 to StartProcess2" source="DependentProcess2" target="StartProcess2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1105" y="448" curvePoint="false"/>
+            <arcpath id="001" x="1105" y="518" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="FireATranstion to Num_TransitionFired" source="FireATranstion" target="Num_TransitionFired">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1390" y="140" curvePoint="false"/>
+            <arcpath id="001" x="1390" y="191" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="gaurd to T6" source="gaurd" target="SndMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="356" y="432" curvePoint="false"/>
+            <arcpath id="001" x="402" y="503" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="LockProcess2 to DoSomethingProcess1" source="LockProcess2" target="DoSomethingProcess1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="925" y="528" curvePoint="false"/>
+            <arcpath id="001" x="918" y="601" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="MakeACopy to Duplicate" source="MakeACopy" target="Duplicate">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="675" y="493" curvePoint="false"/>
+            <arcpath id="001" x="760" y="553" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="MakeACopy to UseLater" source="MakeACopy" target="UseLater">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="665" y="492" curvePoint="false"/>
+            <arcpath id="001" x="663" y="605" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Messages to T6" source="Messages" target="SndMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="443" y="436" curvePoint="false"/>
+            <arcpath id="001" x="412" y="505" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Message to AcceptMessage" source="Message" target="AcceptMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1441" y="405" curvePoint="false"/>
+            <arcpath id="001" x="1393" y="477" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P1 to T1" source="VariableA" target="CheckCondition">
+            <graphics/>
+            <inscription>
+                <value>Default,3</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="362" y="115" curvePoint="false"/>
+            <arcpath id="001" x="362" y="155" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Process1 to T3" source="Process1" target="Fork">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="146" y="441" curvePoint="false"/>
+            <arcpath id="001" x="148" y="496" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ProduceToken to P0" source="ProduceToken" target="TokenProduced">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="115" y="135" curvePoint="false"/>
+            <arcpath id="001" x="115" y="206" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SendMessage to status" source="SendMessage" target="status">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1480" y="632" curvePoint="false"/>
+            <arcpath id="001" x="1480" y="362" curvePoint="false"/>
+            <arcpath id="002" x="1300" y="362" curvePoint="false"/>
+            <arcpath id="003" x="1333" y="396" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SingleMessage to CompressMessage" source="SingleMessage" target="CompressMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1388" y="556" curvePoint="false"/>
+            <arcpath id="001" x="1388" y="596" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SndMessage to Num_SentMessages" source="SndMessage" target="Num_SentMessages">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="407" y="513" curvePoint="false"/>
+            <arcpath id="001" x="405" y="585" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="StartProcess2 to Process1 Locked" source="StartProcess2" target="Process1 Locked">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1105" y="528" curvePoint="false"/>
+            <arcpath id="001" x="1105" y="592" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="status to AcceptMessage" source="status" target="AcceptMessage">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1351" y="420" curvePoint="false"/>
+            <arcpath id="001" x="1383" y="476" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T1 to P5" source="CheckCondition" target="GreaterThan3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="362" y="165" curvePoint="false"/>
+            <arcpath id="001" x="362" y="206" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T3 to Thread1" source="Fork" target="Thread1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="143" y="506" curvePoint="false"/>
+            <arcpath id="001" x="113" y="550" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T3 to Thread2" source="Fork" target="Thread2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="153" y="507" curvePoint="false"/>
+            <arcpath id="001" x="192" y="550" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Thread1 to DoSomething" source="Thread1" target="DoSomething">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="103" y="576" curvePoint="false"/>
+            <arcpath id="001" x="103" y="646" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Thread2 to CallFunction" source="Thread2" target="CallFunction">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="202" y="576" curvePoint="false"/>
+            <arcpath id="001" x="208" y="642" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ToChoose to Choice1" source="ToChoose" target="Choice1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1032" y="97" curvePoint="false"/>
+            <arcpath id="001" x="955" y="143" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ToChoose to Choice2" source="ToChoose" target="Choice2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1058" y="97" curvePoint="false"/>
+            <arcpath id="001" x="1135" y="143" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="TokenInstances to MakeACopy" source="TokenInstances" target="MakeACopy">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="677" y="453" curvePoint="false"/>
+            <arcpath id="001" x="670" y="482" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
