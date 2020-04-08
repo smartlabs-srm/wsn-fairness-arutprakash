@@ -1,0 +1,1165 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <labels x="506" y="746" width="116" height="45" border="true">
+            <text>Here, we copy the velocity stored in "CarVelocitymps"</text>
+        </labels>
+        <labels x="787" y="1052" width="131" height="75" border="true">
+            <text>If accident occurs, then we invoke a deadlock situation.</text>
+        </labels>
+        <labels x="804" y="881" width="101" height="60" border="true">
+            <text>If situation is safe, we return the state of the driver</text>
+        </labels>
+        <labels x="75" y="59" width="326" height="135" border="true">
+            <text>In this model, We check the safety of a Car system. A driver has two choices, to "Accelerate" or to apply "Brakes". Upon selecting a choice, the driver always check if a pedestrian is infront of the car.
+If a pedestrian is present, then the system calculates assumes a distance and computes if the current velocity leads to an accident.
+If nobody is present, the driver continues to drive and select actions.</text>
+        </labels>
+        <labels x="23" y="696" width="101" height="60" border="true">
+            <text>We return back the prev. velocity (that was copied).</text>
+        </labels>
+        <place id="CarVelocitymps">
+            <graphics>
+                <position x="555.0" y="270.0"/>
+            </graphics>
+            <name>
+                <value>CarVelocitymps</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,4</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="CheckAccident">
+            <graphics>
+                <position x="495.0" y="690.0"/>
+            </graphics>
+            <name>
+                <value>CheckAccident</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="DistanceCarToPedestrianINmetres">
+            <graphics>
+                <position x="397.5" y="1072.5"/>
+            </graphics>
+            <name>
+                <value>DistanceCarToPedestrianINmetres</value>
+                <graphics>
+                    <offset x="-21.000000000000018" y="44.333333333333336"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,6</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Finished">
+            <graphics>
+                <position x="255.0" y="915.0"/>
+            </graphics>
+            <name>
+                <value>Finished</value>
+                <graphics>
+                    <offset x="43.333333333333336" y="68.33333333333336"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="IsDriverAlive">
+            <graphics>
+                <position x="690.0" y="45.0"/>
+            </graphics>
+            <name>
+                <value>IsDriverAlive</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Lock">
+            <graphics>
+                <position x="435.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>Lock</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Non-deterministic">
+            <graphics>
+                <position x="580.0" y="500.0"/>
+            </graphics>
+            <name>
+                <value>Non-deterministic</value>
+                <graphics>
+                    <offset x="126.66666666666666" y="-3.333333333333335"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="OneTimeGaurd">
+            <graphics>
+                <position x="90.0" y="810.0"/>
+            </graphics>
+            <name>
+                <value>OneTimeGaurd</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P6">
+            <graphics>
+                <position x="315.0" y="690.0"/>
+            </graphics>
+            <name>
+                <value>P6</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="ToReturn">
+            <graphics>
+                <position x="75.0" y="645.0"/>
+            </graphics>
+            <name>
+                <value>ToReturn</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="VelocityCopy">
+            <graphics>
+                <position x="195.0" y="795.0"/>
+            </graphics>
+            <name>
+                <value>VelocityCopy</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="VelocityReturnCopy">
+            <graphics>
+                <position x="153.75" y="596.25"/>
+            </graphics>
+            <name>
+                <value>VelocityReturnCopy</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="AccelerateCar">
+            <graphics>
+                <position x="540.0" y="150.0"/>
+            </graphics>
+            <name>
+                <value>AccelerateCar</value>
+                <graphics>
+                    <offset x="15.666666666666655" y="6.999999999999998"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="AccidentOccurs">
+            <graphics>
+                <position x="742.5" y="1068.75"/>
+            </graphics>
+            <name>
+                <value>AccidentOccurs</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>180</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ApplyBrakes">
+            <graphics>
+                <position x="735.0" y="150.0"/>
+            </graphics>
+            <name>
+                <value>ApplyBrakes</value>
+                <graphics>
+                    <offset x="104.33333333333333" y="-13.333333333333337"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CheckRoadAhead">
+            <graphics>
+                <position x="555.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>CheckRoadAhead</value>
+                <graphics>
+                    <offset x="138.0" y="16.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CopyCarVelocity">
+            <graphics>
+                <position x="375.0" y="720.0"/>
+            </graphics>
+            <name>
+                <value>CopyCarVelocity</value>
+                <graphics>
+                    <offset x="102.0" y="44.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CopyFinished">
+            <graphics>
+                <position x="210.0" y="855.0"/>
+            </graphics>
+            <name>
+                <value>CopyFinished</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="CopyOneByOne">
+            <graphics>
+                <position x="270.0" y="570.0"/>
+            </graphics>
+            <name>
+                <value>CopyOneByOne</value>
+                <graphics>
+                    <offset x="121.0" y="19.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Nobody">
+            <graphics>
+                <position x="772.5" y="603.75"/>
+            </graphics>
+            <name>
+                <value>Nobody</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>45</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="PersonInRoad">
+            <graphics>
+                <position x="495.0" y="600.0"/>
+            </graphics>
+            <name>
+                <value>PersonInRoad</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ReturnPrevVelocity">
+            <graphics>
+                <position x="105.0" y="450.0"/>
+            </graphics>
+            <name>
+                <value>ReturnPrevVelocity</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Safe">
+            <graphics>
+                <position x="735.0" y="900.0"/>
+            </graphics>
+            <name>
+                <value>Safe</value>
+                <graphics>
+                    <offset x="26.25" y="62.5"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SubtractDistance (one second)">
+            <graphics>
+                <position x="487.5" y="933.75"/>
+            </graphics>
+            <name>
+                <value>SubtractDistance (one second)</value>
+                <graphics>
+                    <offset x="87.0" y="56.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="AccelerateCar to CarVelocityKmph" source="AccelerateCar" target="CarVelocitymps">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="559" y="167" curvePoint="false"/>
+            <arcpath id="001" x="566" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="AccelerateCar to IsDriverAlive" source="AccelerateCar" target="IsDriverAlive">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="556" y="157" curvePoint="false"/>
+            <arcpath id="001" x="689" y="65" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="AccelerateCar to Lock" source="AccelerateCar" target="Lock">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="545" y="166" curvePoint="false"/>
+            <arcpath id="001" x="454" y="314" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ApplyBrakes to IsDriverAlive" source="ApplyBrakes" target="IsDriverAlive">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="747" y="147" curvePoint="false"/>
+            <arcpath id="001" x="708" y="70" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ApplyBrakes to Lock" source="ApplyBrakes" target="Lock">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="741" y="163" curvePoint="false"/>
+            <arcpath id="001" x="460" y="319" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CarVelocityKmph to ApplyBrakes" source="CarVelocitymps" target="ApplyBrakes">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="579" y="273" curvePoint="false"/>
+            <arcpath id="001" x="741" y="170" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CarVelocityKmph to CheckRoadAhead" source="CarVelocitymps" target="CheckRoadAhead">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="567" y="296" curvePoint="false"/>
+            <arcpath id="001" x="571" y="352" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CarVelocityKmph to CopyFinished" source="CarVelocitymps" target="CopyFinished">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="559" y="294" curvePoint="false"/>
+            <arcpath id="001" x="221" y="861" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+        <arc id="CarVelocityKmph to CopyOneByOne" source="CarVelocitymps" target="CopyOneByOne">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="552" y="283" curvePoint="false"/>
+            <arcpath id="001" x="307" y="300" curvePoint="false"/>
+            <arcpath id="002" x="276" y="576" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CheckAccident to CopyCarVelocity" source="CheckAccident" target="CopyCarVelocity">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="492" y="705" curvePoint="false"/>
+            <arcpath id="001" x="391" y="732" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CheckRoadAhead to CarVelocityKmph" source="CheckRoadAhead" target="CarVelocitymps">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="561" y="351" curvePoint="false"/>
+            <arcpath id="001" x="565" y="296" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CheckRoadAhead to Non-deterministic" source="CheckRoadAhead" target="Non-deterministic">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="566" y="361" curvePoint="false"/>
+            <arcpath id="001" x="589" y="497" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CopyCarVelocity to P6" source="CopyCarVelocity" target="P6">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="381" y="732" curvePoint="false"/>
+            <arcpath id="001" x="340" y="709" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CopyFinished to Finished" source="CopyFinished" target="Finished">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="221" y="871" curvePoint="false"/>
+            <arcpath id="001" x="257" y="915" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CopyOneByOne to P6" source="CopyOneByOne" target="P6">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="286" y="587" curvePoint="false"/>
+            <arcpath id="001" x="322" y="687" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CopyOneByOne to VelocityCopy" source="CopyOneByOne" target="VelocityCopy">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="276" y="586" curvePoint="false"/>
+            <arcpath id="001" x="211" y="792" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="CopyOneByOne to VelocityReturnCopy" source="CopyOneByOne" target="VelocityReturnCopy">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="266" y="582" curvePoint="false"/>
+            <arcpath id="001" x="180" y="604" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DistanceCarToPedestrianINmetres to Safe" source="DistanceCarToPedestrianINmetres" target="Safe">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="422" y="1077" curvePoint="false"/>
+            <arcpath id="001" x="741" y="921" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DistanceCarToPedestrianINmetres to SubtractDistance (one second)" source="DistanceCarToPedestrianINmetres" target="SubtractDistance (one second)">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="417" y="1071" curvePoint="false"/>
+            <arcpath id="001" x="493" y="955" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DistanceCarToPedestrian to AccidentOccurs" source="DistanceCarToPedestrianINmetres" target="AccidentOccurs">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="424" y="1084" curvePoint="false"/>
+            <arcpath id="001" x="749" y="1080" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+        <arc id="Finished to Safe" source="Finished" target="Safe">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="281" y="926" curvePoint="false"/>
+            <arcpath id="001" x="741" y="915" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Finished to SubtractDistance (one second)" source="Finished" target="SubtractDistance (one second)">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="281" y="928" curvePoint="false"/>
+            <arcpath id="001" x="494" y="949" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsDriverAlive to AccelerateCar" source="IsDriverAlive" target="AccelerateCar">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="689" y="65" curvePoint="false"/>
+            <arcpath id="001" x="546" y="156" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsDriverAlive to ApplyBrakes" source="IsDriverAlive" target="ApplyBrakes">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="708" y="70" curvePoint="false"/>
+            <arcpath id="001" x="747" y="147" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsDriverAlive to Nobody" source="IsDriverAlive" target="Nobody">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="704" y="71" curvePoint="false"/>
+            <arcpath id="001" x="784" y="608" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsDriverAlive to PersonInRoad" source="IsDriverAlive" target="PersonInRoad">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="696" y="71" curvePoint="false"/>
+            <arcpath id="001" x="501" y="606" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lock to AccelerateCar" source="Lock" target="AccelerateCar">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="455" y="314" curvePoint="false"/>
+            <arcpath id="001" x="552" y="167" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lock to ApplyBrakes" source="Lock" target="ApplyBrakes">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="459" y="319" curvePoint="false"/>
+            <arcpath id="001" x="742" y="156" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Lock to CheckRoadAhead" source="Lock" target="CheckRoadAhead">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="461" y="331" curvePoint="false"/>
+            <arcpath id="001" x="551" y="357" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Nobody to IsDriverAlive" source="Nobody" target="IsDriverAlive">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="779" y="613" curvePoint="false"/>
+            <arcpath id="001" x="704" y="71" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Non-deterministic to Nobody" source="Non-deterministic" target="Nobody">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="604" y="519" curvePoint="false"/>
+            <arcpath id="001" x="774" y="618" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Non-deterministic to PersonInRoad" source="Non-deterministic" target="PersonInRoad">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="582" y="523" curvePoint="false"/>
+            <arcpath id="001" x="511" y="607" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="OneTimeGaurd to CopyFinished" source="OneTimeGaurd" target="CopyFinished">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="115" y="827" curvePoint="false"/>
+            <arcpath id="001" x="206" y="867" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P6 to CopyOneByOne" source="P6" target="CopyOneByOne">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="328" y="687" curvePoint="false"/>
+            <arcpath id="001" x="349" y="538" curvePoint="false"/>
+            <arcpath id="002" x="311" y="538" curvePoint="false"/>
+            <arcpath id="003" x="286" y="577" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="PersonInRoad to CheckAccident" source="PersonInRoad" target="CheckAccident">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="506" y="616" curvePoint="false"/>
+            <arcpath id="001" x="506" y="687" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ReturnPrevVelocity to CarVelocitymps" source="ReturnPrevVelocity" target="CarVelocitymps">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="116" y="456" curvePoint="false"/>
+            <arcpath id="001" x="127" y="285" curvePoint="false"/>
+            <arcpath id="002" x="552" y="282" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ReturnPrevVelocity to ToReturn" source="ReturnPrevVelocity" target="ToReturn">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="110" y="466" curvePoint="false"/>
+            <arcpath id="001" x="88" y="642" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Safe to IsDriverAlive" source="Safe" target="IsDriverAlive">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="747" y="897" curvePoint="false"/>
+            <arcpath id="001" x="589" y="465" curvePoint="false"/>
+            <arcpath id="002" x="567" y="41" curvePoint="false"/>
+            <arcpath id="003" x="687" y="55" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Safe to Lock" source="Safe" target="Lock">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="747" y="897" curvePoint="false"/>
+            <arcpath id="001" x="454" y="340" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Safe to ToReturn" source="Safe" target="ToReturn">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="742" y="903" curvePoint="false"/>
+            <arcpath id="001" x="101" y="662" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SubtractDistance (one second) to Finished" source="SubtractDistance (one second)" target="Finished">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="494" y="943" curvePoint="false"/>
+            <arcpath id="001" x="281" y="928" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ToReturn to ReturnPrevVelocity" source="ToReturn" target="ReturnPrevVelocity">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="89" y="642" curvePoint="false"/>
+            <arcpath id="001" x="117" y="467" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="VelocityCopy to Safe" source="VelocityCopy" target="Safe">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="221" y="809" curvePoint="false"/>
+            <arcpath id="001" x="742" y="909" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+        <arc id="VelocityCopy to SubtractDistance (one second)" source="VelocityCopy" target="SubtractDistance (one second)">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="220" y="813" curvePoint="false"/>
+            <arcpath id="001" x="494" y="937" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="VelocityReturnCopy to ReturnPrevVelocity" source="VelocityReturnCopy" target="ReturnPrevVelocity">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="161" y="593" curvePoint="false"/>
+            <arcpath id="001" x="124" y="467" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+    </net>
+</pnml>
