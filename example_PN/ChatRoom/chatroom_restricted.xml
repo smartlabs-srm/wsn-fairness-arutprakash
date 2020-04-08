@@ -1,0 +1,2374 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <labels x="463" y="521" width="152" height="63" border="true">
+            <text>Msg Buffer
+Max. capacity: 2</text>
+        </labels>
+        <place id="BufferK2">
+            <graphics>
+                <position x="630.0" y="465.0"/>
+            </graphics>
+            <name>
+                <value>BufferK2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="BufferPre">
+            <graphics>
+                <position x="735.0" y="480.0"/>
+            </graphics>
+            <name>
+                <value>BufferPre</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="ChatRoom">
+            <graphics>
+                <position x="585.0" y="690.0"/>
+            </graphics>
+            <name>
+                <value>ChatRoom</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="GaurdOne">
+            <graphics>
+                <position x="660.0" y="645.0"/>
+            </graphics>
+            <name>
+                <value>GaurdOne</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="MsgCopy">
+            <graphics>
+                <position x="765.0" y="660.0"/>
+            </graphics>
+            <name>
+                <value>MsgCopy</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P19">
+            <graphics>
+                <position x="75.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>P19</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P20">
+            <graphics>
+                <position x="195.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>P20</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P21">
+            <graphics>
+                <position x="345.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>P21</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P22">
+            <graphics>
+                <position x="480.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>P22</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P23">
+            <graphics>
+                <position x="630.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>P23</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P24">
+            <graphics>
+                <position x="735.0" y="945.0"/>
+            </graphics>
+            <name>
+                <value>P24</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P30">
+            <graphics>
+                <position x="135.0" y="675.0"/>
+            </graphics>
+            <name>
+                <value>P30</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P31">
+            <graphics>
+                <position x="390.0" y="645.0"/>
+            </graphics>
+            <name>
+                <value>P31</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P32">
+            <graphics>
+                <position x="885.0" y="765.0"/>
+            </graphics>
+            <name>
+                <value>P32</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Timestep">
+            <graphics>
+                <position x="1095.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Timestep</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="timestepLimit">
+            <graphics>
+                <position x="945.0" y="60.0"/>
+            </graphics>
+            <name>
+                <value>timestepLimit</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,10</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="timestepPre">
+            <graphics>
+                <position x="1065.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>timestepPre</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User 1">
+            <graphics>
+                <position x="420.0" y="105.0"/>
+            </graphics>
+            <name>
+                <value>User 1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User1isSender">
+            <graphics>
+                <position x="300.0" y="420.0"/>
+            </graphics>
+            <name>
+                <value>User1isSender</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User1NumRecvMsg">
+            <graphics>
+                <position x="240.0" y="1170.0"/>
+            </graphics>
+            <name>
+                <value>User1NumRecvMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User1NumSentMsg">
+            <graphics>
+                <position x="285.0" y="270.0"/>
+            </graphics>
+            <name>
+                <value>User1NumSentMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User1Pre">
+            <graphics>
+                <position x="330.0" y="165.0"/>
+            </graphics>
+            <name>
+                <value>User1Pre</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User1SentMsg">
+            <graphics>
+                <position x="165.0" y="810.0"/>
+            </graphics>
+            <name>
+                <value>User1SentMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User 2">
+            <graphics>
+                <position x="615.0" y="105.0"/>
+            </graphics>
+            <name>
+                <value>User 2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User2isSender">
+            <graphics>
+                <position x="495.0" y="420.0"/>
+            </graphics>
+            <name>
+                <value>User2isSender</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User2NumRecvMsg">
+            <graphics>
+                <position x="450.0" y="1155.0"/>
+            </graphics>
+            <name>
+                <value>User2NumRecvMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User2NumSentMsg">
+            <graphics>
+                <position x="525.0" y="270.0"/>
+            </graphics>
+            <name>
+                <value>User2NumSentMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User2Pre">
+            <graphics>
+                <position x="525.0" y="165.0"/>
+            </graphics>
+            <name>
+                <value>User2Pre</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User2SentMsg">
+            <graphics>
+                <position x="420.0" y="810.0"/>
+            </graphics>
+            <name>
+                <value>User2SentMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User 3">
+            <graphics>
+                <position x="780.0" y="105.0"/>
+            </graphics>
+            <name>
+                <value>User 3</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User3isSender">
+            <graphics>
+                <position x="945.0" y="420.0"/>
+            </graphics>
+            <name>
+                <value>User3isSender</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User3NumSentMsg">
+            <graphics>
+                <position x="900.0" y="270.0"/>
+            </graphics>
+            <name>
+                <value>User3NumSentMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User3Pre">
+            <graphics>
+                <position x="900.0" y="165.0"/>
+            </graphics>
+            <name>
+                <value>User3Pre</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User3RecvMsg">
+            <graphics>
+                <position x="645.0" y="1155.0"/>
+            </graphics>
+            <name>
+                <value>User3RecvMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="User3SentMsg">
+            <graphics>
+                <position x="690.0" y="810.0"/>
+            </graphics>
+            <name>
+                <value>User3SentMsg</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="BufferSendMsg">
+            <graphics>
+                <position x="630.0" y="570.0"/>
+            </graphics>
+            <name>
+                <value>BufferSendMsg</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ChatroomChooseUse2">
+            <graphics>
+                <position x="525.0" y="750.0"/>
+            </graphics>
+            <name>
+                <value>ChatroomChooseUse2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ChatroomChooseUser1">
+            <graphics>
+                <position x="270.0" y="735.0"/>
+            </graphics>
+            <name>
+                <value>ChatroomChooseUser1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ChatroomChooseUser3">
+            <graphics>
+                <position x="810.0" y="750.0"/>
+            </graphics>
+            <name>
+                <value>ChatroomChooseUser3</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="split1">
+            <graphics>
+                <position x="150.0" y="885.0"/>
+            </graphics>
+            <name>
+                <value>split1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="split2">
+            <graphics>
+                <position x="405.0" y="885.0"/>
+            </graphics>
+            <name>
+                <value>split2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="split3">
+            <graphics>
+                <position x="675.0" y="885.0"/>
+            </graphics>
+            <name>
+                <value>split3</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="timestepnext">
+            <graphics>
+                <position x="1020.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>timestepnext</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="user1send">
+            <graphics>
+                <position x="420.0" y="210.0"/>
+            </graphics>
+            <name>
+                <value>user1send</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>270</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User1TokenBack">
+            <graphics>
+                <position x="135.0" y="555.0"/>
+            </graphics>
+            <name>
+                <value>User1TokenBack</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User1toUser2">
+            <graphics>
+                <position x="75.0" y="1020.0"/>
+            </graphics>
+            <name>
+                <value>User1toUser2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User1toUser3">
+            <graphics>
+                <position x="195.0" y="1020.0"/>
+            </graphics>
+            <name>
+                <value>User1toUser3</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="user2send">
+            <graphics>
+                <position x="615.0" y="210.0"/>
+            </graphics>
+            <name>
+                <value>user2send</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User2TokenBack">
+            <graphics>
+                <position x="375.0" y="555.0"/>
+            </graphics>
+            <name>
+                <value>User2TokenBack</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User2toUser1">
+            <graphics>
+                <position x="345.0" y="1020.0"/>
+            </graphics>
+            <name>
+                <value>User2toUser1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User2toUser3">
+            <graphics>
+                <position x="480.0" y="1020.0"/>
+            </graphics>
+            <name>
+                <value>User2toUser3</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="user3send">
+            <graphics>
+                <position x="780.0" y="210.0"/>
+            </graphics>
+            <name>
+                <value>user3send</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User3TokenBack">
+            <graphics>
+                <position x="915.0" y="585.0"/>
+            </graphics>
+            <name>
+                <value>User3TokenBack</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User3toUser1">
+            <graphics>
+                <position x="735.0" y="1020.0"/>
+            </graphics>
+            <name>
+                <value>User3toUser1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="User3toUser2">
+            <graphics>
+                <position x="630.0" y="1020.0"/>
+            </graphics>
+            <name>
+                <value>User3toUser2</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Buffer: Pre to user1:send()" source="BufferPre" target="user1send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="735" y="482" curvePoint="false"/>
+            <arcpath id="001" x="440" y="227" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Buffer: Pre to user2:send()" source="BufferPre" target="user2send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="740" y="478" curvePoint="false"/>
+            <arcpath id="001" x="635" y="227" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Buffer: Pre to user3:send()" source="BufferPre" target="user3send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="749" y="477" curvePoint="false"/>
+            <arcpath id="001" x="792" y="227" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Buffer: SendMsg() to Buffer: Pre" source="BufferSendMsg" target="BufferPre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="647" y="577" curvePoint="false"/>
+            <arcpath id="001" x="667" y="487" curvePoint="false"/>
+            <arcpath id="002" x="732" y="491" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Buffer: SendMsg() to MsgCopy" source="BufferSendMsg" target="MsgCopy">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="646" y="587" curvePoint="false"/>
+            <arcpath id="001" x="764" y="664" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Buffer (K=2) to SendMsg2All" source="BufferK2" target="BufferSendMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="641" y="491" curvePoint="false"/>
+            <arcpath id="001" x="633" y="576" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Chatroom: Choose(user1) to User1: #SentMsg" source="ChatroomChooseUser1" target="User1SentMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="281" y="751" curvePoint="false"/>
+            <arcpath id="001" x="189" y="813" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Chatroom: Choose(user2) to User2: #SentMsg" source="ChatroomChooseUse2" target="User2SentMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="521" y="762" curvePoint="false"/>
+            <arcpath id="001" x="444" y="813" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Chatroom: Choose(user3) to User3: #SentMsg" source="ChatroomChooseUser3" target="User3SentMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="806" y="762" curvePoint="false"/>
+            <arcpath id="001" x="715" y="814" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ChatRoom to Chatroom: Choose(user1)" source="ChatRoom" target="ChatroomChooseUser1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="582" y="704" curvePoint="false"/>
+            <arcpath id="001" x="296" y="747" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ChatRoom to Chatroom: Choose(user2)" source="ChatRoom" target="ChatroomChooseUse2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="585" y="712" curvePoint="false"/>
+            <arcpath id="001" x="541" y="757" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ChatRoom to Chatroom: Choose(user3)" source="ChatRoom" target="ChatroomChooseUser3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="611" y="706" curvePoint="false"/>
+            <arcpath id="001" x="806" y="762" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="GaurdOne to Buffer: SendMsg()" source="GaurdOne" target="BufferSendMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="671" y="642" curvePoint="false"/>
+            <arcpath id="001" x="667" y="517" curvePoint="false"/>
+            <arcpath id="002" x="647" y="517" curvePoint="false"/>
+            <arcpath id="003" x="640" y="576" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="MsgCopy to User1TokenBack" source="MsgCopy" target="User1TokenBack">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="762" y="669" curvePoint="false"/>
+            <arcpath id="001" x="152" y="566" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="MsgCopy to User2TokenBack" source="MsgCopy" target="User2TokenBack">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="762" y="668" curvePoint="false"/>
+            <arcpath id="001" x="392" y="566" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="MsgCopy to User3TokenBack" source="MsgCopy" target="User3TokenBack">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="790" y="665" curvePoint="false"/>
+            <arcpath id="001" x="921" y="605" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P19 to User1-&gt;User2:Msg" source="P19" target="User1toUser2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="87" y="971" curvePoint="false"/>
+            <arcpath id="001" x="87" y="1017" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P20 to User1-&gt;User3:Msg" source="P20" target="User1toUser3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="207" y="971" curvePoint="false"/>
+            <arcpath id="001" x="207" y="1017" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P21 to User2-&gt;User1:Msg" source="P21" target="User2toUser1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="357" y="971" curvePoint="false"/>
+            <arcpath id="001" x="357" y="1017" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P22 to User2-&gt;User3:Msg" source="P22" target="User2toUser3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="492" y="971" curvePoint="false"/>
+            <arcpath id="001" x="492" y="1017" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P23 to User3-&gt;User2:Msg" source="P23" target="User3toUser2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="642" y="971" curvePoint="false"/>
+            <arcpath id="001" x="642" y="1017" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P24 to User3-&gt;User1:Msg" source="P24" target="User3toUser1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="747" y="971" curvePoint="false"/>
+            <arcpath id="001" x="747" y="1017" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P30 to T17" source="P30" target="User1TokenBack">
+            <graphics/>
+            <inscription>
+                <value>Default,2</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="147" y="672" curvePoint="false"/>
+            <arcpath id="001" x="147" y="582" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P31 to T18" source="P31" target="User2TokenBack">
+            <graphics/>
+            <inscription>
+                <value>Default,2</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="399" y="642" curvePoint="false"/>
+            <arcpath id="001" x="387" y="582" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P32 to T19" source="P32" target="User3TokenBack">
+            <graphics/>
+            <inscription>
+                <value>Default,2</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="899" y="762" curvePoint="false"/>
+            <arcpath id="001" x="927" y="612" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SendMsg2All to ChatRoom" source="BufferSendMsg" target="ChatRoom">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="636" y="586" curvePoint="false"/>
+            <arcpath id="001" x="601" y="687" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="split1 to P19" source="split1" target="P19">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="156" y="901" curvePoint="false"/>
+            <arcpath id="001" x="99" y="948" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="split1 to P20" source="split1" target="P20">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="166" y="902" curvePoint="false"/>
+            <arcpath id="001" x="198" y="944" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="split2 to P21" source="split2" target="P21">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="411" y="901" curvePoint="false"/>
+            <arcpath id="001" x="368" y="946" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="split2 to P22" source="split2" target="P22">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="421" y="902" curvePoint="false"/>
+            <arcpath id="001" x="480" y="947" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="split3 to P23" source="split3" target="P23">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="681" y="901" curvePoint="false"/>
+            <arcpath id="001" x="651" y="945" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="split3 to P24" source="split3" target="P24">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="691" y="902" curvePoint="false"/>
+            <arcpath id="001" x="736" y="946" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T17 to User 1: Pre" source="User1TokenBack" target="User1Pre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="147" y="552" curvePoint="false"/>
+            <arcpath id="001" x="87" y="312" curvePoint="false"/>
+            <arcpath id="002" x="328" y="184" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T18 to User 2: Pre" source="User2TokenBack" target="User2Pre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="387" y="552" curvePoint="false"/>
+            <arcpath id="001" x="367" y="422" curvePoint="false"/>
+            <arcpath id="002" x="528" y="189" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="T19 to User 3: Pre" source="User3TokenBack" target="User3Pre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="922" y="591" curvePoint="false"/>
+            <arcpath id="001" x="817" y="422" curvePoint="false"/>
+            <arcpath id="002" x="906" y="190" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestep+1 to User 1: Pre" source="timestepnext" target="User1Pre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1026" y="135" curvePoint="false"/>
+            <arcpath id="001" x="356" y="176" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestep+1 to User 2: Pre" source="timestepnext" target="User2Pre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1026" y="139" curvePoint="false"/>
+            <arcpath id="001" x="551" y="175" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestep+1 to User 3: Pre" source="timestepnext" target="User3Pre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1026" y="143" curvePoint="false"/>
+            <arcpath id="001" x="926" y="172" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepGaurd to timestep+1" source="timestepPre" target="timestepnext">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1070" y="223" curvePoint="false"/>
+            <arcpath id="001" x="1032" y="147" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepLimit to timestepnext" source="timestepLimit" target="timestepnext">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="969" y="80" curvePoint="false"/>
+            <arcpath id="001" x="1027" y="127" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepnext to Timestep" source="timestepnext" target="Timestep">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1036" y="132" curvePoint="false"/>
+            <arcpath id="001" x="1092" y="132" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepnext to timestepGaurd" source="timestepnext" target="timestepPre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1027" y="125" curvePoint="false"/>
+            <arcpath id="001" x="1027" y="127" curvePoint="false"/>
+            <arcpath id="002" x="1070" y="223" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepnext to User 1" source="timestepnext" target="User 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1026" y="133" curvePoint="false"/>
+            <arcpath id="001" x="446" y="117" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepnext to User 2" source="timestepnext" target="User 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1027" y="131" curvePoint="false"/>
+            <arcpath id="001" x="641" y="117" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="timestepnext to User 3" source="timestepnext" target="User 3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1027" y="129" curvePoint="false"/>
+            <arcpath id="001" x="806" y="117" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1: #SentMsg to split1" source="User1SentMsg" target="split1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="173" y="836" curvePoint="false"/>
+            <arcpath id="001" x="161" y="891" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 1: isSender to Chatroom: Choose(user1)" source="User1isSender" target="ChatroomChooseUser1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="310" y="446" curvePoint="false"/>
+            <arcpath id="001" x="281" y="741" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 1: Pre to user1:send()" source="User1Pre" target="user1send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="354" y="184" curvePoint="false"/>
+            <arcpath id="001" x="417" y="221" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user1:send() to Buffer (K=2)" source="user1send" target="BufferK2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="433" y="227" curvePoint="false"/>
+            <arcpath id="001" x="632" y="465" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user1:send() to User1: # SentMsg" source="user1send" target="User1NumSentMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="417" y="221" curvePoint="false"/>
+            <arcpath id="001" x="310" y="275" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user1:send() to User 1: isSender" source="user1send" target="User1isSender">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="426" y="226" curvePoint="false"/>
+            <arcpath id="001" x="319" y="418" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1:TokenBack to GaurdOne" source="User1TokenBack" target="GaurdOne">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="151" y="573" curvePoint="false"/>
+            <arcpath id="001" x="367" y="682" curvePoint="false"/>
+            <arcpath id="002" x="592" y="682" curvePoint="false"/>
+            <arcpath id="003" x="657" y="661" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1:TokenBack to timestepGaurd" source="User1TokenBack" target="timestepPre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="152" y="559" curvePoint="false"/>
+            <arcpath id="001" x="1062" y="241" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1-&gt;User2:Msg to P30" source="User1toUser2" target="P30">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="81" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="12" y="912" curvePoint="false"/>
+            <arcpath id="002" x="139" y="699" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1-&gt;User2:Msg to User2: #RecvMsg" source="User1toUser2" target="User2NumRecvMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="91" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="447" y="1161" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1-&gt;User3:Msg to P30" source="User1toUser3" target="P30">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="212" y="1027" curvePoint="false"/>
+            <arcpath id="001" x="272" y="947" curvePoint="false"/>
+            <arcpath id="002" x="153" y="700" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1-&gt;User3:Msg to User3: #RecvMsg" source="User1toUser3" target="User3RecvMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="211" y="1037" curvePoint="false"/>
+            <arcpath id="001" x="642" y="1162" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User1Pre to timestepnext" source="User1Pre" target="timestepnext">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="356" y="176" curvePoint="false"/>
+            <arcpath id="001" x="1026" y="137" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 1 to user1:send()" source="User 1" target="user1send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="432" y="131" curvePoint="false"/>
+            <arcpath id="001" x="432" y="217" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2: #SentMsg to split2" source="User2SentMsg" target="split2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="428" y="836" curvePoint="false"/>
+            <arcpath id="001" x="416" y="891" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 2: isSender to Chatroom: Choose(user2)" source="User2isSender" target="ChatroomChooseUse2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="508" y="446" curvePoint="false"/>
+            <arcpath id="001" x="531" y="756" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 2: Pre to user2:send()" source="User2Pre" target="user2send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="549" y="184" curvePoint="false"/>
+            <arcpath id="001" x="611" y="222" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user2:send() to Buffer (K=2)" source="user2send" target="BufferK2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="629" y="227" curvePoint="false"/>
+            <arcpath id="001" x="640" y="462" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user2:send() to User2: # SentMsg" source="user2send" target="User2NumSentMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="617" y="226" curvePoint="false"/>
+            <arcpath id="001" x="549" y="273" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user2:send() to User 2: isSender" source="user2send" target="User2isSender">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="623" y="226" curvePoint="false"/>
+            <arcpath id="001" x="514" y="418" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2:TokenBack to GaurdOne" source="User2TokenBack" target="GaurdOne">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="391" y="573" curvePoint="false"/>
+            <arcpath id="001" x="657" y="652" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2:TokenBack to timestepGaurd" source="User2TokenBack" target="timestepPre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="392" y="559" curvePoint="false"/>
+            <arcpath id="001" x="1063" y="243" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2-&gt;User1:Msg to P31" source="User2toUser1" target="P31">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="357" y="1017" curvePoint="false"/>
+            <arcpath id="001" x="272" y="872" curvePoint="false"/>
+            <arcpath id="002" x="394" y="669" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2-&gt;User1:Msg to User1: #RecvMsg" source="User2toUser1" target="User1NumRecvMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="351" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="260" y="1169" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2-&gt;User3:Msg to P31" source="User2toUser3" target="P31">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="492" y="1017" curvePoint="false"/>
+            <arcpath id="001" x="572" y="892" curvePoint="false"/>
+            <arcpath id="002" x="410" y="669" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2-&gt;User3:Msg to User3: #RecvMsg" source="User2toUser3" target="User3RecvMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="496" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="645" y="1157" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User2Pre to timestepnext" source="User2Pre" target="timestepnext">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="551" y="175" curvePoint="false"/>
+            <arcpath id="001" x="1026" y="141" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 2 to user2:send()" source="User 2" target="user2send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="626" y="131" curvePoint="false"/>
+            <arcpath id="001" x="626" y="216" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3: #SentMsg to split3" source="User3SentMsg" target="split3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="698" y="836" curvePoint="false"/>
+            <arcpath id="001" x="686" y="891" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 3: isSender to Chatroom: Choose(user3)" source="User3isSender" target="ChatroomChooseUser3">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="951" y="445" curvePoint="false"/>
+            <arcpath id="001" x="821" y="756" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 3: Pre to user3:send()" source="User3Pre" target="user3send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="898" y="182" curvePoint="false"/>
+            <arcpath id="001" x="806" y="222" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user3:send() to Buffer (K=2)" source="user3send" target="BufferK2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="785" y="226" curvePoint="false"/>
+            <arcpath id="001" x="649" y="464" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user3:send() to User3: # SentMsg" source="user3send" target="User3NumSentMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="806" y="222" curvePoint="false"/>
+            <arcpath id="001" x="898" y="274" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="user3:send() to User 3: isSender" source="user3send" target="User3isSender">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="799" y="227" curvePoint="false"/>
+            <arcpath id="001" x="947" y="420" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3:TokenBack to GaurdOne" source="User3TokenBack" target="GaurdOne">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="921" y="598" curvePoint="false"/>
+            <arcpath id="001" x="686" y="653" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3:TokenBack to timestepGaurd" source="User3TokenBack" target="timestepPre">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="927" y="582" curvePoint="false"/>
+            <arcpath id="001" x="1071" y="250" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3-&gt;User1:Msg to P32" source="User3toUser1" target="P32">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="751" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="872" y="912" curvePoint="false"/>
+            <arcpath id="002" x="894" y="791" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3-&gt;User1:Msg to User1: #RecvMsg" source="User3toUser1" target="User1NumRecvMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="741" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="266" y="1177" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3-&gt;User2:Msg to P32" source="User3toUser2" target="P32">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="646" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="886" y="787" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3-&gt;User2:Msg to User2: #RecvMsg" source="User3toUser2" target="User2NumRecvMsg">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="636" y="1032" curvePoint="false"/>
+            <arcpath id="001" x="473" y="1157" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User3Pre to timestepnext" source="User3Pre" target="timestepnext">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="926" y="173" curvePoint="false"/>
+            <arcpath id="001" x="1026" y="145" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="User 3 to user3:send()" source="User 3" target="user3send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="791" y="131" curvePoint="false"/>
+            <arcpath id="001" x="791" y="216" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
