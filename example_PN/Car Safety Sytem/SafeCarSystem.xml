@@ -1,17 +1,29 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="75" y="59" width="326" height="135" border="true">
+        <labels x="507" y="747" width="117" height="46" border="true">
+            <text>Here, we copy the velocity stored in "CarVelocitymps"</text>
+        </labels>
+        <labels x="788" y="1053" width="132" height="76" border="true">
+            <text>If accident occurs, then we invoke a deadlock situation.</text>
+        </labels>
+        <labels x="805" y="882" width="102" height="61" border="true">
+            <text>If situation is safe, we return the state of the driver</text>
+        </labels>
+        <labels x="76" y="60" width="327" height="136" border="true">
             <text>In this model, We check the safety of a Car system. A driver has two choices, to "Accelerate" or to apply "Brakes". Upon selecting a choice, the driver always check if a pedestrian is infront of the car.
 If a pedestrian is present, then the system calculates assumes a distance and computes if the current velocity leads to an accident.
 If nobody is present, the driver continues to drive and select actions.</text>
         </labels>
-        <place id="CarVelocityKmph">
+        <labels x="159" y="427" width="102" height="61" border="true">
+            <text>We return back the prev. velocity (that was copied).</text>
+        </labels>
+        <place id="CarVelocitymps">
             <graphics>
                 <position x="555.0" y="270.0"/>
             </graphics>
             <name>
-                <value>CarVelocityKmph</value>
+                <value>CarVelocitymps</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -46,12 +58,12 @@ If nobody is present, the driver continues to drive and select actions.</text>
                 <value>0</value>
             </capacity>
         </place>
-        <place id="DistanceCarToPedestrian">
+        <place id="DistanceCarToPedestrianINmetres">
             <graphics>
-                <position x="397.5" y="1072.5"/>
+                <position x="405.0" y="1080.0"/>
             </graphics>
             <name>
-                <value>DistanceCarToPedestrian</value>
+                <value>DistanceCarToPedestrianINmetres</value>
                 <graphics>
                     <offset x="-21.000000000000018" y="44.333333333333336"/>
                 </graphics>
@@ -128,7 +140,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
         </place>
         <place id="Non-deterministic">
             <graphics>
-                <position x="580.0" y="500.0"/>
+                <position x="585.0" y="495.0"/>
             </graphics>
             <name>
                 <value>Non-deterministic</value>
@@ -208,7 +220,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
         </place>
         <place id="VelocityCopy">
             <graphics>
-                <position x="195.0" y="765.0"/>
+                <position x="195.0" y="795.0"/>
             </graphics>
             <name>
                 <value>VelocityCopy</value>
@@ -228,7 +240,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
         </place>
         <place id="VelocityReturnCopy">
             <graphics>
-                <position x="153.75" y="596.25"/>
+                <position x="150.0" y="600.0"/>
             </graphics>
             <name>
                 <value>VelocityReturnCopy</value>
@@ -274,7 +286,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
         </transition>
         <transition id="AccidentOccurs">
             <graphics>
-                <position x="742.5" y="1068.75"/>
+                <position x="750.0" y="1065.0"/>
             </graphics>
             <name>
                 <value>AccidentOccurs</value>
@@ -378,7 +390,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
         </transition>
         <transition id="CopyFinished">
             <graphics>
-                <position x="210.0" y="840.0"/>
+                <position x="210.0" y="855.0"/>
             </graphics>
             <name>
                 <value>CopyFinished</value>
@@ -430,7 +442,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
         </transition>
         <transition id="Nobody">
             <graphics>
-                <position x="772.5" y="603.75"/>
+                <position x="780.0" y="600.0"/>
             </graphics>
             <name>
                 <value>Nobody</value>
@@ -466,6 +478,32 @@ If nobody is present, the driver continues to drive and select actions.</text>
             </name>
             <orientation>
                 <value>90</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ReleaseLock">
+            <graphics>
+                <position x="345.0" y="360.0"/>
+            </graphics>
+            <name>
+                <value>ReleaseLock</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
             </orientation>
             <rate>
                 <value>1.0</value>
@@ -532,14 +570,14 @@ If nobody is present, the driver continues to drive and select actions.</text>
                 <value>1</value>
             </priority>
         </transition>
-        <transition id="SubtractDistance">
+        <transition id="SubtractDistance (one second)">
             <graphics>
-                <position x="487.5" y="933.75"/>
+                <position x="495.0" y="930.0"/>
             </graphics>
             <name>
-                <value>SubtractDistance</value>
+                <value>SubtractDistance (one second)</value>
                 <graphics>
-                    <offset x="-5.0" y="35.0"/>
+                    <offset x="87.0" y="56.0"/>
                 </graphics>
             </name>
             <orientation>
@@ -558,7 +596,7 @@ If nobody is present, the driver continues to drive and select actions.</text>
                 <value>1</value>
             </priority>
         </transition>
-        <arc id="AccelerateCar to CarVelocityKmph" source="AccelerateCar" target="CarVelocityKmph">
+        <arc id="AccelerateCar to CarVelocityKmph" source="AccelerateCar" target="CarVelocitymps">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -567,8 +605,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="559" y="167" curvePoint="false"/>
-            <arcpath id="001" x="566" y="267" curvePoint="false"/>
+            <arcpath id="000" x="556" y="165" curvePoint="false"/>
+            <arcpath id="001" x="563" y="265" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="AccelerateCar to IsDriverAlive" source="AccelerateCar" target="IsDriverAlive">
@@ -580,8 +618,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="556" y="157" curvePoint="false"/>
-            <arcpath id="001" x="689" y="65" curvePoint="false"/>
+            <arcpath id="000" x="553" y="155" curvePoint="false"/>
+            <arcpath id="001" x="686" y="63" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="AccelerateCar to Lock" source="AccelerateCar" target="Lock">
@@ -593,8 +631,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="545" y="166" curvePoint="false"/>
-            <arcpath id="001" x="454" y="314" curvePoint="false"/>
+            <arcpath id="000" x="543" y="163" curvePoint="false"/>
+            <arcpath id="001" x="451" y="311" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="ApplyBrakes to IsDriverAlive" source="ApplyBrakes" target="IsDriverAlive">
@@ -606,8 +644,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="747" y="147" curvePoint="false"/>
-            <arcpath id="001" x="708" y="70" curvePoint="false"/>
+            <arcpath id="000" x="745" y="145" curvePoint="false"/>
+            <arcpath id="001" x="706" y="68" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="ApplyBrakes to Lock" source="ApplyBrakes" target="Lock">
@@ -619,11 +657,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="741" y="163" curvePoint="false"/>
-            <arcpath id="001" x="460" y="319" curvePoint="false"/>
+            <arcpath id="000" x="738" y="161" curvePoint="false"/>
+            <arcpath id="001" x="456" y="316" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="CarVelocityKmph to ApplyBrakes" source="CarVelocityKmph" target="ApplyBrakes">
+        <arc id="CarVelocityKmph to ApplyBrakes" source="CarVelocitymps" target="ApplyBrakes">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -632,11 +670,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="579" y="273" curvePoint="false"/>
-            <arcpath id="001" x="741" y="170" curvePoint="false"/>
+            <arcpath id="000" x="576" y="271" curvePoint="false"/>
+            <arcpath id="001" x="738" y="168" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="CarVelocityKmph to CheckRoadAhead" source="CarVelocityKmph" target="CheckRoadAhead">
+        <arc id="CarVelocityKmph to CheckRoadAhead" source="CarVelocitymps" target="CheckRoadAhead">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -645,11 +683,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="567" y="296" curvePoint="false"/>
-            <arcpath id="001" x="571" y="352" curvePoint="false"/>
+            <arcpath id="000" x="563" y="293" curvePoint="false"/>
+            <arcpath id="001" x="558" y="348" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="CarVelocityKmph to CopyFinished" source="CarVelocityKmph" target="CopyFinished">
+        <arc id="CarVelocityKmph to CopyFinished" source="CarVelocitymps" target="CopyFinished">
             <graphics/>
             <inscription>
                 <value/>
@@ -658,11 +696,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value/>
             </tagged>
-            <arcpath id="000" x="559" y="294" curvePoint="false"/>
-            <arcpath id="001" x="221" y="846" curvePoint="false"/>
+            <arcpath id="000" x="556" y="291" curvePoint="false"/>
+            <arcpath id="001" x="218" y="858" curvePoint="false"/>
             <type value="inhibitor"/>
         </arc>
-        <arc id="CarVelocityKmph to CopyOneByOne" source="CarVelocityKmph" target="CopyOneByOne">
+        <arc id="CarVelocityKmph to CopyOneByOne" source="CarVelocitymps" target="CopyOneByOne">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -671,9 +709,9 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="552" y="283" curvePoint="false"/>
-            <arcpath id="001" x="307" y="300" curvePoint="false"/>
-            <arcpath id="002" x="276" y="576" curvePoint="false"/>
+            <arcpath id="000" x="550" y="280" curvePoint="false"/>
+            <arcpath id="001" x="305" y="298" curvePoint="false"/>
+            <arcpath id="002" x="273" y="573" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CheckAccident to CopyCarVelocity" source="CheckAccident" target="CopyCarVelocity">
@@ -685,11 +723,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="492" y="705" curvePoint="false"/>
-            <arcpath id="001" x="391" y="732" curvePoint="false"/>
+            <arcpath id="000" x="490" y="703" curvePoint="false"/>
+            <arcpath id="001" x="388" y="730" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="CheckRoadAhead to CarVelocityKmph" source="CheckRoadAhead" target="CarVelocityKmph">
+        <arc id="CheckRoadAhead to CarVelocityKmph" source="CheckRoadAhead" target="CarVelocitymps">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -698,8 +736,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="561" y="351" curvePoint="false"/>
-            <arcpath id="001" x="565" y="296" curvePoint="false"/>
+            <arcpath id="000" x="568" y="350" curvePoint="false"/>
+            <arcpath id="001" x="565" y="293" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CheckRoadAhead to Non-deterministic" source="CheckRoadAhead" target="Non-deterministic">
@@ -711,8 +749,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="566" y="361" curvePoint="false"/>
-            <arcpath id="001" x="589" y="497" curvePoint="false"/>
+            <arcpath id="000" x="563" y="358" curvePoint="false"/>
+            <arcpath id="001" x="591" y="490" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CopyCarVelocity to P6" source="CopyCarVelocity" target="P6">
@@ -724,8 +762,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="381" y="732" curvePoint="false"/>
-            <arcpath id="001" x="340" y="709" curvePoint="false"/>
+            <arcpath id="000" x="378" y="730" curvePoint="false"/>
+            <arcpath id="001" x="336" y="706" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CopyFinished to Finished" source="CopyFinished" target="Finished">
@@ -737,8 +775,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="221" y="856" curvePoint="false"/>
-            <arcpath id="001" x="258" y="914" curvePoint="false"/>
+            <arcpath id="000" x="218" y="868" curvePoint="false"/>
+            <arcpath id="001" x="255" y="913" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CopyOneByOne to P6" source="CopyOneByOne" target="P6">
@@ -750,8 +788,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="286" y="587" curvePoint="false"/>
-            <arcpath id="001" x="322" y="687" curvePoint="false"/>
+            <arcpath id="000" x="283" y="585" curvePoint="false"/>
+            <arcpath id="001" x="320" y="685" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CopyOneByOne to VelocityCopy" source="CopyOneByOne" target="VelocityCopy">
@@ -763,8 +801,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="276" y="586" curvePoint="false"/>
-            <arcpath id="001" x="212" y="762" curvePoint="false"/>
+            <arcpath id="000" x="273" y="583" curvePoint="false"/>
+            <arcpath id="001" x="208" y="790" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="CopyOneByOne to VelocityReturnCopy" source="CopyOneByOne" target="VelocityReturnCopy">
@@ -776,11 +814,37 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="266" y="582" curvePoint="false"/>
-            <arcpath id="001" x="180" y="604" curvePoint="false"/>
+            <arcpath id="000" x="263" y="580" curvePoint="false"/>
+            <arcpath id="001" x="173" y="605" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="DistanceCarToPedestrian to AccidentOccurs" source="DistanceCarToPedestrian" target="AccidentOccurs">
+        <arc id="DistanceCarToPedestrianINmetres to Safe" source="DistanceCarToPedestrianINmetres" target="Safe">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="426" y="1081" curvePoint="false"/>
+            <arcpath id="001" x="738" y="920" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DistanceCarToPedestrianINmetres to SubtractDistance (one second)" source="DistanceCarToPedestrianINmetres" target="SubtractDistance (one second)">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="421" y="1076" curvePoint="false"/>
+            <arcpath id="001" x="498" y="948" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="DistanceCarToPedestrian to AccidentOccurs" source="DistanceCarToPedestrianINmetres" target="AccidentOccurs">
             <graphics/>
             <inscription>
                 <value/>
@@ -789,35 +853,9 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value/>
             </tagged>
-            <arcpath id="000" x="424" y="1084" curvePoint="false"/>
-            <arcpath id="001" x="749" y="1080" curvePoint="false"/>
+            <arcpath id="000" x="428" y="1088" curvePoint="false"/>
+            <arcpath id="001" x="755" y="1073" curvePoint="false"/>
             <type value="inhibitor"/>
-        </arc>
-        <arc id="DistanceCarToPedestrian to Safe" source="DistanceCarToPedestrian" target="Safe">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="422" y="1077" curvePoint="false"/>
-            <arcpath id="001" x="741" y="921" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="DistanceCarToPedestrian to SubtractDistance" source="DistanceCarToPedestrian" target="SubtractDistance">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="417" y="1071" curvePoint="false"/>
-            <arcpath id="001" x="493" y="955" curvePoint="false"/>
-            <type value="normal"/>
         </arc>
         <arc id="Finished to Safe" source="Finished" target="Safe">
             <graphics/>
@@ -828,11 +866,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="281" y="926" curvePoint="false"/>
-            <arcpath id="001" x="741" y="915" curvePoint="false"/>
+            <arcpath id="000" x="278" y="923" curvePoint="false"/>
+            <arcpath id="001" x="738" y="915" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Finished to SubtractDistance" source="Finished" target="SubtractDistance">
+        <arc id="Finished to SubtractDistance (one second)" source="Finished" target="SubtractDistance (one second)">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -841,8 +879,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="281" y="928" curvePoint="false"/>
-            <arcpath id="001" x="494" y="949" curvePoint="false"/>
+            <arcpath id="000" x="278" y="925" curvePoint="false"/>
+            <arcpath id="001" x="500" y="936" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="IsDriverAlive to AccelerateCar" source="IsDriverAlive" target="AccelerateCar">
@@ -854,8 +892,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="689" y="65" curvePoint="false"/>
-            <arcpath id="001" x="546" y="156" curvePoint="false"/>
+            <arcpath id="000" x="686" y="61" curvePoint="false"/>
+            <arcpath id="001" x="543" y="153" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="IsDriverAlive to ApplyBrakes" source="IsDriverAlive" target="ApplyBrakes">
@@ -867,8 +905,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="708" y="70" curvePoint="false"/>
-            <arcpath id="001" x="747" y="147" curvePoint="false"/>
+            <arcpath id="000" x="706" y="68" curvePoint="false"/>
+            <arcpath id="001" x="745" y="145" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="IsDriverAlive to Nobody" source="IsDriverAlive" target="Nobody">
@@ -880,8 +918,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="704" y="71" curvePoint="false"/>
-            <arcpath id="001" x="784" y="608" curvePoint="false"/>
+            <arcpath id="000" x="701" y="68" curvePoint="false"/>
+            <arcpath id="001" x="785" y="606" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="IsDriverAlive to PersonInRoad" source="IsDriverAlive" target="PersonInRoad">
@@ -893,8 +931,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="696" y="71" curvePoint="false"/>
-            <arcpath id="001" x="501" y="606" curvePoint="false"/>
+            <arcpath id="000" x="693" y="68" curvePoint="false"/>
+            <arcpath id="001" x="498" y="603" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lock to AccelerateCar" source="Lock" target="AccelerateCar">
@@ -906,8 +944,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="455" y="314" curvePoint="false"/>
-            <arcpath id="001" x="552" y="167" curvePoint="false"/>
+            <arcpath id="000" x="451" y="311" curvePoint="false"/>
+            <arcpath id="001" x="550" y="165" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lock to ApplyBrakes" source="Lock" target="ApplyBrakes">
@@ -919,8 +957,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="459" y="319" curvePoint="false"/>
-            <arcpath id="001" x="742" y="156" curvePoint="false"/>
+            <arcpath id="000" x="456" y="316" curvePoint="false"/>
+            <arcpath id="001" x="740" y="153" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Lock to CheckRoadAhead" source="Lock" target="CheckRoadAhead">
@@ -932,8 +970,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="461" y="331" curvePoint="false"/>
-            <arcpath id="001" x="551" y="357" curvePoint="false"/>
+            <arcpath id="000" x="458" y="328" curvePoint="false"/>
+            <arcpath id="001" x="548" y="355" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Nobody to IsDriverAlive" source="Nobody" target="IsDriverAlive">
@@ -945,8 +983,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="779" y="613" curvePoint="false"/>
-            <arcpath id="001" x="704" y="71" curvePoint="false"/>
+            <arcpath id="000" x="790" y="601" curvePoint="false"/>
+            <arcpath id="001" x="701" y="68" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Non-deterministic to Nobody" source="Non-deterministic" target="Nobody">
@@ -958,8 +996,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="604" y="519" curvePoint="false"/>
-            <arcpath id="001" x="774" y="618" curvePoint="false"/>
+            <arcpath id="000" x="606" y="511" curvePoint="false"/>
+            <arcpath id="001" x="778" y="611" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Non-deterministic to PersonInRoad" source="Non-deterministic" target="PersonInRoad">
@@ -971,8 +1009,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="582" y="523" curvePoint="false"/>
-            <arcpath id="001" x="511" y="607" curvePoint="false"/>
+            <arcpath id="000" x="585" y="515" curvePoint="false"/>
+            <arcpath id="001" x="508" y="605" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="OneTimeGaurd to CopyFinished" source="OneTimeGaurd" target="CopyFinished">
@@ -984,8 +1022,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="116" y="826" curvePoint="false"/>
-            <arcpath id="001" x="206" y="852" curvePoint="false"/>
+            <arcpath id="000" x="113" y="825" curvePoint="false"/>
+            <arcpath id="001" x="203" y="865" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="P6 to CopyOneByOne" source="P6" target="CopyOneByOne">
@@ -997,10 +1035,24 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="328" y="687" curvePoint="false"/>
-            <arcpath id="001" x="349" y="538" curvePoint="false"/>
-            <arcpath id="002" x="311" y="538" curvePoint="false"/>
-            <arcpath id="003" x="286" y="577" curvePoint="false"/>
+            <arcpath id="000" x="326" y="685" curvePoint="false"/>
+            <arcpath id="001" x="346" y="536" curvePoint="false"/>
+            <arcpath id="002" x="310" y="536" curvePoint="false"/>
+            <arcpath id="003" x="283" y="575" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P6 to Safe" source="P6" target="Safe">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="328" y="713" curvePoint="false"/>
+            <arcpath id="001" x="350" y="793" curvePoint="false"/>
+            <arcpath id="002" x="740" y="905" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="PersonInRoad to CheckAccident" source="PersonInRoad" target="CheckAccident">
@@ -1012,11 +1064,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="506" y="616" curvePoint="false"/>
-            <arcpath id="001" x="506" y="687" curvePoint="false"/>
+            <arcpath id="000" x="503" y="613" curvePoint="false"/>
+            <arcpath id="001" x="503" y="685" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="ReturnPrevVelocity to CarVelocityKmph" source="ReturnPrevVelocity" target="CarVelocityKmph">
+        <arc id="ReleaseLock to Lock" source="ReleaseLock" target="Lock">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1025,9 +1077,22 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="116" y="456" curvePoint="false"/>
-            <arcpath id="001" x="127" y="285" curvePoint="false"/>
-            <arcpath id="002" x="552" y="282" curvePoint="false"/>
+            <arcpath id="000" x="358" y="370" curvePoint="false"/>
+            <arcpath id="001" x="431" y="331" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ReturnPrevVelocity to CarVelocitymps" source="ReturnPrevVelocity" target="CarVelocitymps">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="113" y="453" curvePoint="false"/>
+            <arcpath id="001" x="125" y="283" curvePoint="false"/>
+            <arcpath id="002" x="550" y="280" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="ReturnPrevVelocity to ToReturn" source="ReturnPrevVelocity" target="ToReturn">
@@ -1039,8 +1104,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="110" y="466" curvePoint="false"/>
-            <arcpath id="001" x="88" y="642" curvePoint="false"/>
+            <arcpath id="000" x="115" y="465" curvePoint="false"/>
+            <arcpath id="001" x="86" y="640" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Safe to IsDriverAlive" source="Safe" target="IsDriverAlive">
@@ -1052,23 +1117,10 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="747" y="897" curvePoint="false"/>
-            <arcpath id="001" x="589" y="465" curvePoint="false"/>
-            <arcpath id="002" x="567" y="41" curvePoint="false"/>
-            <arcpath id="003" x="687" y="55" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Safe to Lock" source="Safe" target="Lock">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="747" y="897" curvePoint="false"/>
-            <arcpath id="001" x="454" y="340" curvePoint="false"/>
+            <arcpath id="000" x="745" y="895" curvePoint="false"/>
+            <arcpath id="001" x="586" y="463" curvePoint="false"/>
+            <arcpath id="002" x="565" y="40" curvePoint="false"/>
+            <arcpath id="003" x="685" y="51" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Safe to ToReturn" source="Safe" target="ToReturn">
@@ -1080,11 +1132,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="742" y="903" curvePoint="false"/>
-            <arcpath id="001" x="101" y="662" curvePoint="false"/>
+            <arcpath id="000" x="740" y="900" curvePoint="false"/>
+            <arcpath id="001" x="98" y="660" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="SubtractDistance to Finished" source="SubtractDistance" target="Finished">
+        <arc id="SubtractDistance (one second) to Finished" source="SubtractDistance (one second)" target="Finished">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1093,8 +1145,21 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="494" y="943" curvePoint="false"/>
-            <arcpath id="001" x="281" y="928" curvePoint="false"/>
+            <arcpath id="000" x="498" y="943" curvePoint="false"/>
+            <arcpath id="001" x="278" y="925" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ToReturn to ReleaseLock" source="ToReturn" target="ReleaseLock">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="95" y="643" curvePoint="false"/>
+            <arcpath id="001" x="350" y="365" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="ToReturn to ReturnPrevVelocity" source="ToReturn" target="ReturnPrevVelocity">
@@ -1106,8 +1171,8 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="89" y="642" curvePoint="false"/>
-            <arcpath id="001" x="117" y="467" curvePoint="false"/>
+            <arcpath id="000" x="86" y="640" curvePoint="false"/>
+            <arcpath id="001" x="108" y="463" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="VelocityCopy to Safe" source="VelocityCopy" target="Safe">
@@ -1119,11 +1184,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value/>
             </tagged>
-            <arcpath id="000" x="221" y="780" curvePoint="false"/>
-            <arcpath id="001" x="742" y="909" curvePoint="false"/>
+            <arcpath id="000" x="218" y="806" curvePoint="false"/>
+            <arcpath id="001" x="738" y="910" curvePoint="false"/>
             <type value="inhibitor"/>
         </arc>
-        <arc id="VelocityCopy to SubtractDistance" source="VelocityCopy" target="SubtractDistance">
+        <arc id="VelocityCopy to SubtractDistance (one second)" source="VelocityCopy" target="SubtractDistance (one second)">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -1132,11 +1197,11 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="220" y="784" curvePoint="false"/>
-            <arcpath id="001" x="494" y="937" curvePoint="false"/>
+            <arcpath id="000" x="218" y="810" curvePoint="false"/>
+            <arcpath id="001" x="500" y="931" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="VelocityReturnCopy to ReturnPrevVelocity" source="VelocityReturnCopy" target="ReturnPrevVelocity">
+        <arc id="VelocityReturnCopy to ReleaseLock" source="VelocityReturnCopy" target="ReleaseLock">
             <graphics/>
             <inscription>
                 <value/>
@@ -1145,9 +1210,22 @@ If nobody is present, the driver continues to drive and select actions.</text>
             <tagged>
                 <value/>
             </tagged>
-            <arcpath id="000" x="161" y="593" curvePoint="false"/>
-            <arcpath id="001" x="124" y="467" curvePoint="false"/>
+            <arcpath id="000" x="168" y="598" curvePoint="false"/>
+            <arcpath id="001" x="348" y="375" curvePoint="false"/>
             <type value="inhibitor"/>
+        </arc>
+        <arc id="VelocityReturnCopy to ReturnPrevVelocity" source="VelocityReturnCopy" target="ReturnPrevVelocity">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="155" y="595" curvePoint="false"/>
+            <arcpath id="001" x="121" y="465" curvePoint="false"/>
+            <type value="normal"/>
         </arc>
     </net>
 </pnml>
