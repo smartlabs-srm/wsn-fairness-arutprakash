@@ -15,7 +15,7 @@
 If a pedestrian is present, then the system calculates assumes a distance and computes if the current velocity leads to an accident.
 If nobody is present, the driver continues to drive and select actions.</text>
         </labels>
-        <labels x="23" y="696" width="101" height="60" border="true">
+        <labels x="158" y="426" width="101" height="60" border="true">
             <text>We return back the prev. velocity (that was copied).</text>
         </labels>
         <place id="CarVelocitymps">
