@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="ISO-8859-1"?><pnml>
     <net id="Net-One" type="P/T net">
         <token id="Default" enabled="true" red="0" green="0" blue="0"/>
-        <labels x="708" y="54" width="206" height="159" border="true">
+        <labels x="710" y="56" width="208" height="161" border="true">
             <text>Communication Subsystem of Node 1</text>
         </labels>
-        <labels x="722" y="300" width="251" height="204" border="true">
+        <labels x="724" y="302" width="253" height="206" border="true">
             <text>Communication Subsystem of Node 2</text>
         </labels>
-        <labels x="35" y="20" width="941" height="223" border="true">
+        <labels x="37" y="22" width="928" height="210" border="true">
             <text>Node 1</text>
         </labels>
-        <labels x="26" y="277" width="956" height="268" border="true">
+        <labels x="28" y="279" width="958" height="240" border="true">
             <text>Node 2</text>
         </labels>
-        <labels x="414" y="50" width="221" height="161" border="true">
+        <labels x="416" y="52" width="223" height="163" border="true">
             <text>Processor Subsystem of Node 1</text>
         </labels>
-        <labels x="425" y="306" width="236" height="204" border="true">
+        <labels x="427" y="308" width="238" height="206" border="true">
             <text>Processor Subsystem of Node 2</text>
         </labels>
-        <labels x="52" y="46" width="311" height="163" border="true">
+        <labels x="54" y="48" width="313" height="165" border="true">
             <text>Sensor Subsystem of Node 1 </text>
         </labels>
-        <labels x="50" y="313" width="281" height="204" border="true">
+        <labels x="52" y="315" width="283" height="206" border="true">
             <text>Sensor Subsystem of Node 2</text>
         </labels>
-        <labels x="1030" y="35" width="116" height="55" border="true">
+        <labels x="1032" y="37" width="118" height="57" border="true">
             <text>Von Neumann Architecture For Processor Subsystem</text>
         </labels>
         <place id="ADC Node 1">
@@ -110,12 +110,12 @@
         </place>
         <place id="Cluster 1 Data Aggregation">
             <graphics>
-                <position x="1275.0" y="75.0"/>
+                <position x="1110.0" y="285.0"/>
             </graphics>
             <name>
                 <value>Cluster 1 Data Aggregation</value>
                 <graphics>
-                    <offset x="87.0" y="49.0"/>
+                    <offset x="88.0" y="56.0"/>
                 </graphics>
             </name>
             <initialMarking>
@@ -170,7 +170,7 @@
         </place>
         <place id="Make Node 1 Head">
             <graphics>
-                <position x="525.0" y="140.0"/>
+                <position x="525.0" y="135.0"/>
             </graphics>
             <name>
                 <value>Make Node 1 Head</value>
@@ -179,7 +179,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,1</value>
+                <value>Default,0</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -199,7 +199,7 @@
                 </graphics>
             </name>
             <initialMarking>
-                <value>Default,1</value>
+                <value>Default,0</value>
                 <graphics>
                     <offset x="0.0" y="0.0"/>
                 </graphics>
@@ -270,7 +270,7 @@
         </place>
         <place id="Radio Transmitter of Node 2">
             <graphics>
-                <position x="735.0" y="375.0"/>
+                <position x="750.0" y="375.0"/>
             </graphics>
             <name>
                 <value>Radio Transmitter of Node 2</value>
@@ -486,12 +486,12 @@
         </transition>
         <transition id="Make Node 2 Head">
             <graphics>
-                <position x="570.0" y="345.0"/>
+                <position x="600.0" y="345.0"/>
             </graphics>
             <name>
                 <value>Make Node 2 Head</value>
                 <graphics>
-                    <offset x="78.0" y="54.0"/>
+                    <offset x="63.0" y="49.0"/>
                 </graphics>
             </name>
             <orientation>
@@ -538,7 +538,7 @@
         </transition>
         <transition id="Radio Signal of Cluster Data from Node 2">
             <graphics>
-                <position x="870.0" y="405.0"/>
+                <position x="885.0" y="345.0"/>
             </graphics>
             <name>
                 <value>Radio Signal of Cluster Data from Node 2</value>
@@ -564,7 +564,7 @@
         </transition>
         <transition id="Sensor Data of Node 1">
             <graphics>
-                <position x="290.0" y="50.0"/>
+                <position x="285.0" y="45.0"/>
             </graphics>
             <name>
                 <value>Sensor Data of Node 1</value>
@@ -727,8 +727,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1356" y="237" curvePoint="false"/>
-            <arcpath id="001" x="1301" y="237" curvePoint="false"/>
+            <arcpath id="000" x="1355" y="236" curvePoint="false"/>
+            <arcpath id="001" x="1300" y="236" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="ADC Node 1 to Sensor Data of Node 1" source="ADC Node 1" target="Sensor Data of Node 1">
@@ -740,8 +740,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="236" y="58" curvePoint="false"/>
-            <arcpath id="001" x="296" y="62" curvePoint="false"/>
+            <arcpath id="000" x="235" y="56" curvePoint="false"/>
+            <arcpath id="001" x="290" y="56" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="ADC Node 2 to Sensor Data of Node 2" source="ADC Node 2" target="Sensor Data of Node 2">
@@ -753,8 +753,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="206" y="344" curvePoint="false"/>
-            <arcpath id="001" x="276" y="357" curvePoint="false"/>
+            <arcpath id="000" x="205" y="343" curvePoint="false"/>
+            <arcpath id="001" x="275" y="356" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Base Station to Activate Custer 1" source="Base Station" target="Activate Custer 1">
@@ -766,8 +766,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1437" y="237" curvePoint="false"/>
-            <arcpath id="001" x="1366" y="237" curvePoint="false"/>
+            <arcpath id="000" x="1436" y="236" curvePoint="false"/>
+            <arcpath id="001" x="1365" y="236" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cluster 1 to Make Cluster 1 Node 1 Head" source="Cluster 1" target="Make Cluster 1 Node 1 Head">
@@ -779,8 +779,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1272" y="232" curvePoint="false"/>
-            <arcpath id="001" x="1156" y="192" curvePoint="false"/>
+            <arcpath id="000" x="1271" y="231" curvePoint="false"/>
+            <arcpath id="001" x="1155" y="191" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Cluster 1 to Make Cluster 1 Node 2 Head" source="Cluster 1" target="Make Cluster 1 Node 2 Head">
@@ -792,21 +792,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1279" y="250" curvePoint="false"/>
-            <arcpath id="001" x="1167" y="447" curvePoint="false"/>
-            <type value="normal"/>
-        </arc>
-        <arc id="Energy level to Make Node 1 Head " source="Energy level" target="Make Node 1 Head ">
-            <graphics/>
-            <inscription>
-                <value>Default,1</value>
-                <graphics/>
-            </inscription>
-            <tagged>
-                <value>false</value>
-            </tagged>
-            <arcpath id="000" x="458" y="152" curvePoint="false"/>
-            <arcpath id="001" x="531" y="92" curvePoint="false"/>
+            <arcpath id="000" x="1278" y="248" curvePoint="false"/>
+            <arcpath id="001" x="1166" y="446" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Energy Level to Make Node 2 Head" source="Energy Level" target="Make Node 2 Head">
@@ -818,11 +805,11 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="474" y="438" curvePoint="false"/>
-            <arcpath id="001" x="576" y="362" curvePoint="false"/>
+            <arcpath id="000" x="475" y="447" curvePoint="false"/>
+            <arcpath id="001" x="566" y="458" curvePoint="false"/>
             <type value="normal"/>
         </arc>
-        <arc id="Energy storing in Battery Node 1 to Energy level" source="Energy storing in Battery Node 1" target="Energy level">
+        <arc id="Energy Level to Make Node 2 Head" source="Energy Level" target="Make Node 2 Head">
             <graphics/>
             <inscription>
                 <value>Default,1</value>
@@ -831,8 +818,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="271" y="132" curvePoint="false"/>
-            <arcpath id="001" x="432" y="159" curvePoint="false"/>
+            <arcpath id="000" x="473" y="437" curvePoint="false"/>
+            <arcpath id="001" x="605" y="361" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Energy Storing in Battery Node 2 to Energy Level" source="Energy Storing in Battery Node 2" target="Energy Level">
@@ -844,8 +831,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="286" y="462" curvePoint="false"/>
-            <arcpath id="001" x="447" y="448" curvePoint="false"/>
+            <arcpath id="000" x="285" y="461" curvePoint="false"/>
+            <arcpath id="001" x="446" y="447" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Make Cluster 1 Node 1 Head to Make Node 1 Head" source="Make Cluster 1 Node 1 Head" target="Make Node 1 Head">
@@ -857,8 +844,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1146" y="192" curvePoint="false"/>
-            <arcpath id="001" x="551" y="152" curvePoint="false"/>
+            <arcpath id="000" x="1145" y="191" curvePoint="false"/>
+            <arcpath id="001" x="550" y="146" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Make Cluster 1 Node 2 Head to Make Node 2 Head" source="Make Cluster 1 Node 2 Head" target="Make Node 2 Head">
@@ -870,8 +857,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="1161" y="462" curvePoint="false"/>
-            <arcpath id="001" x="597" y="462" curvePoint="false"/>
+            <arcpath id="000" x="1160" y="461" curvePoint="false"/>
+            <arcpath id="001" x="596" y="461" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Make Node 1 Head to Make Node 1 Head " source="Make Node 1 Head" target="Make Node 1 Head ">
@@ -883,8 +870,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="537" y="137" curvePoint="false"/>
-            <arcpath id="001" x="537" y="102" curvePoint="false"/>
+            <arcpath id="000" x="536" y="131" curvePoint="false"/>
+            <arcpath id="001" x="536" y="101" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Make Node 1 Head  to Radio Transmitter of Node 1" source="Make Node 1 Head " target="Radio Transmitter of Node 1">
@@ -896,8 +883,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="541" y="87" curvePoint="false"/>
-            <arcpath id="001" x="702" y="100" curvePoint="false"/>
+            <arcpath id="000" x="540" y="86" curvePoint="false"/>
+            <arcpath id="001" x="701" y="98" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Make Node 2 Head to Make Node 2 Head" source="Make Node 2 Head" target="Make Node 2 Head">
@@ -909,8 +896,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="582" y="447" curvePoint="false"/>
-            <arcpath id="001" x="582" y="372" curvePoint="false"/>
+            <arcpath id="000" x="585" y="446" curvePoint="false"/>
+            <arcpath id="001" x="611" y="371" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Make Node 2 Head to Radio Transmitter of Node 2" source="Make Node 2 Head" target="Radio Transmitter of Node 2">
@@ -922,8 +909,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="586" y="357" curvePoint="false"/>
-            <arcpath id="001" x="732" y="384" curvePoint="false"/>
+            <arcpath id="000" x="615" y="356" curvePoint="false"/>
+            <arcpath id="001" x="746" y="382" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Memory of Node 1 to Make Node 1 Head " source="Memory of Node 1" target="Make Node 1 Head ">
@@ -935,8 +922,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="446" y="86" curvePoint="false"/>
-            <arcpath id="001" x="532" y="82" curvePoint="false"/>
+            <arcpath id="000" x="445" y="86" curvePoint="false"/>
+            <arcpath id="001" x="530" y="86" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Memory of Node 2 to Make Node 2 Head" source="Memory of Node 2" target="Make Node 2 Head">
@@ -948,8 +935,34 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="476" y="356" curvePoint="false"/>
-            <arcpath id="001" x="577" y="352" curvePoint="false"/>
+            <arcpath id="000" x="475" y="356" curvePoint="false"/>
+            <arcpath id="001" x="606" y="351" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Radio signal of Cluster Data from Node 1 to Cluster 1 Data Aggregation" source="Radio signal of Cluster Data from Node 1" target="Cluster 1 Data Aggregation">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="870" y="101" curvePoint="false"/>
+            <arcpath id="001" x="1108" y="286" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Radio Signal of Cluster Data from Node 2 to Cluster 1 Data Aggregation" source="Radio Signal of Cluster Data from Node 2" target="Cluster 1 Data Aggregation">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="900" y="356" curvePoint="false"/>
+            <arcpath id="001" x="1106" y="300" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Radio Transmitter of Node 1 to Radio signal of Cluster Data from Node 1" source="Radio Transmitter of Node 1" target="Radio signal of Cluster Data from Node 1">
@@ -961,8 +974,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="731" y="102" curvePoint="false"/>
-            <arcpath id="001" x="861" y="102" curvePoint="false"/>
+            <arcpath id="000" x="730" y="101" curvePoint="false"/>
+            <arcpath id="001" x="860" y="101" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Radio Transmitter of Node 2 to Radio Signal of Cluster Data from Node 2" source="Radio Transmitter of Node 2" target="Radio Signal of Cluster Data from Node 2">
@@ -974,8 +987,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="761" y="390" curvePoint="false"/>
-            <arcpath id="001" x="876" y="417" curvePoint="false"/>
+            <arcpath id="000" x="775" y="382" curvePoint="false"/>
+            <arcpath id="001" x="890" y="356" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Sensor Data of Node 1 to Memory of Node 1" source="Sensor Data of Node 1" target="Memory of Node 1">
@@ -987,8 +1000,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="306" y="62" curvePoint="false"/>
-            <arcpath id="001" x="417" y="84" curvePoint="false"/>
+            <arcpath id="000" x="300" y="56" curvePoint="false"/>
+            <arcpath id="001" x="416" y="82" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Sensor Data of Node 2 to Memory of Node 2" source="Sensor Data of Node 2" target="Memory of Node 2">
@@ -1000,8 +1013,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="286" y="357" curvePoint="false"/>
-            <arcpath id="001" x="447" y="357" curvePoint="false"/>
+            <arcpath id="000" x="285" y="356" curvePoint="false"/>
+            <arcpath id="001" x="446" y="356" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Solar Energy for Node 1 to Solar to Electrical Node 1" source="Solar Energy for Node 1" target="Solar to Electrical Node 1">
@@ -1013,8 +1026,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="61" y="147" curvePoint="false"/>
-            <arcpath id="001" x="147" y="134" curvePoint="false"/>
+            <arcpath id="000" x="60" y="146" curvePoint="false"/>
+            <arcpath id="001" x="146" y="132" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Solar Energy Node2 to Solar to Electrical Node 2" source="Solar Energy Node2" target="Solar to Electrical Node 2">
@@ -1026,8 +1039,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="91" y="447" curvePoint="false"/>
-            <arcpath id="001" x="162" y="447" curvePoint="false"/>
+            <arcpath id="000" x="90" y="446" curvePoint="false"/>
+            <arcpath id="001" x="161" y="446" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Solar to Electrical Node 1 to Energy storing in Battery Node 1" source="Solar to Electrical Node 1" target="Energy storing in Battery Node 1">
@@ -1039,8 +1052,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="176" y="132" curvePoint="false"/>
-            <arcpath id="001" x="261" y="132" curvePoint="false"/>
+            <arcpath id="000" x="175" y="131" curvePoint="false"/>
+            <arcpath id="001" x="260" y="131" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Solar to Electrical Node 2 to Energy Storing in Battery Node 2" source="Solar to Electrical Node 2" target="Energy Storing in Battery Node 2">
@@ -1052,8 +1065,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="191" y="449" curvePoint="false"/>
-            <arcpath id="001" x="276" y="462" curvePoint="false"/>
+            <arcpath id="000" x="190" y="447" curvePoint="false"/>
+            <arcpath id="001" x="275" y="461" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="TemperatureData for Node 1 to ADC Node 1" source="TemperatureData for Node 1" target="ADC Node 1">
@@ -1065,8 +1078,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="76" y="72" curvePoint="false"/>
-            <arcpath id="001" x="207" y="58" curvePoint="false"/>
+            <arcpath id="000" x="75" y="71" curvePoint="false"/>
+            <arcpath id="001" x="206" y="57" curvePoint="false"/>
             <type value="normal"/>
         </arc>
         <arc id="Temperature Data for Node 2 to ADC Node 2" source="Temperature Data for Node 2" target="ADC Node 2">
@@ -1078,8 +1091,8 @@
             <tagged>
                 <value>false</value>
             </tagged>
-            <arcpath id="000" x="91" y="357" curvePoint="false"/>
-            <arcpath id="001" x="177" y="344" curvePoint="false"/>
+            <arcpath id="000" x="90" y="356" curvePoint="false"/>
+            <arcpath id="001" x="176" y="342" curvePoint="false"/>
             <type value="normal"/>
         </arc>
     </net>
