@@ -1,0 +1,1091 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <place id="BS">
+            <graphics>
+                <position x="1110.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>BS</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="ClusterData">
+            <graphics>
+                <position x="420.0" y="165.0"/>
+            </graphics>
+            <name>
+                <value>ClusterData</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="CollectedData">
+            <graphics>
+                <position x="645.0" y="360.0"/>
+            </graphics>
+            <name>
+                <value>CollectedData</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="CurrentTIme">
+            <graphics>
+                <position x="975.0" y="30.0"/>
+            </graphics>
+            <name>
+                <value>CurrentTIme</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="isAwake1">
+            <graphics>
+                <position x="810.0" y="315.0"/>
+            </graphics>
+            <name>
+                <value>isAwake1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="isAwake2">
+            <graphics>
+                <position x="405.0" y="540.0"/>
+            </graphics>
+            <name>
+                <value>isAwake2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="IsSN1CH">
+            <graphics>
+                <position x="615.0" y="50.0"/>
+            </graphics>
+            <name>
+                <value>IsSN1CH</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="IsSN2CH">
+            <graphics>
+                <position x="615.0" y="155.0"/>
+            </graphics>
+            <name>
+                <value>IsSN2CH</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="P12">
+            <graphics>
+                <position x="360.0" y="98.0"/>
+            </graphics>
+            <name>
+                <value>P12</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="S1Buffer">
+            <graphics>
+                <position x="345.0" y="45.0"/>
+            </graphics>
+            <name>
+                <value>S1Buffer</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="S2Buffer">
+            <graphics>
+                <position x="240.0" y="660.0"/>
+            </graphics>
+            <name>
+                <value>S2Buffer</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="SN1">
+            <graphics>
+                <position x="90.0" y="135.0"/>
+            </graphics>
+            <name>
+                <value>SN1</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,4</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="SN2">
+            <graphics>
+                <position x="270.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>SN2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,2</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="TempTime">
+            <graphics>
+                <position x="780.0" y="30.0"/>
+            </graphics>
+            <name>
+                <value>TempTime</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Aggregate">
+            <graphics>
+                <position x="270.0" y="98.0"/>
+            </graphics>
+            <name>
+                <value>Aggregate</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="AggregateClusterData1">
+            <graphics>
+                <position x="825.0" y="180.0"/>
+            </graphics>
+            <name>
+                <value>AggregateClusterData1</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="AggregateClusterData2">
+            <graphics>
+                <position x="450.0" y="95.0"/>
+            </graphics>
+            <name>
+                <value>AggregateClusterData2</value>
+                <graphics>
+                    <offset x="76.0" y="33.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>180</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="ProceedTime">
+            <graphics>
+                <position x="900.0" y="30.0"/>
+            </graphics>
+            <name>
+                <value>ProceedTime</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SelectSN1asCH">
+            <graphics>
+                <position x="750.0" y="110.0"/>
+            </graphics>
+            <name>
+                <value>SelectSN1asCH</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SelectSN2asCH">
+            <graphics>
+                <position x="510.0" y="140.0"/>
+            </graphics>
+            <name>
+                <value>SelectSN2asCH</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="sendAggrData">
+            <graphics>
+                <position x="285.0" y="150.0"/>
+            </graphics>
+            <name>
+                <value>sendAggrData</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="sendSN1SleepSignal">
+            <graphics>
+                <position x="960.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>sendSN1SleepSignal</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="sendSN1WakeUpSignal">
+            <graphics>
+                <position x="960.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>sendSN1WakeUpSignal</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SN1send">
+            <graphics>
+                <position x="285.0" y="255.0"/>
+            </graphics>
+            <name>
+                <value>SN1send</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SN2send">
+            <graphics>
+                <position x="435.0" y="405.0"/>
+            </graphics>
+            <name>
+                <value>SN2send</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SN2sendSleepSignal">
+            <graphics>
+                <position x="975.0" y="495.0"/>
+            </graphics>
+            <name>
+                <value>SN2sendSleepSignal</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="SN2sendWakeUpSignal">
+            <graphics>
+                <position x="975.0" y="570.0"/>
+            </graphics>
+            <name>
+                <value>SN2sendWakeUpSignal</value>
+                <graphics>
+                    <offset x="-5.0" y="35.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="AggregateClusterData2 to P12" source="AggregateClusterData2" target="P12">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="457" y="106" curvePoint="false"/>
+            <arcpath id="001" x="386" y="109" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Aggregate to P12" source="Aggregate" target="P12">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="286" y="116" curvePoint="false"/>
+            <arcpath id="001" x="357" y="111" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Aggregate to S1Buffer" source="Aggregate" target="S1Buffer">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="287" y="102" curvePoint="false"/>
+            <arcpath id="001" x="344" y="65" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="BS to sendSN1SleepSignal" source="BS" target="sendSN1SleepSignal">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1110" y="437" curvePoint="false"/>
+            <arcpath id="001" x="977" y="292" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="BS to sendSN1WakeUpSignal" source="BS" target="sendSN1WakeUpSignal">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1108" y="441" curvePoint="false"/>
+            <arcpath id="001" x="977" y="352" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="BS to SN2sendSleepSignal" source="BS" target="SN2sendSleepSignal">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1108" y="454" curvePoint="false"/>
+            <arcpath id="001" x="992" y="502" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="BS to SN2sendWakeUpSignal" source="BS" target="SN2sendWakeUpSignal">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1111" y="457" curvePoint="false"/>
+            <arcpath id="001" x="991" y="587" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="isAwake1 to sendSN1SleepSignal" source="isAwake1" target="sendSN1SleepSignal">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="836" y="325" curvePoint="false"/>
+            <arcpath id="001" x="966" y="297" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="isAwake1 to SN1send" source="isAwake1" target="SN1send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="807" y="325" curvePoint="false"/>
+            <arcpath id="001" x="302" y="262" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="isAwake2 to SN2send" source="isAwake2" target="SN2send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="420" y="537" curvePoint="false"/>
+            <arcpath id="001" x="447" y="432" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="isAwake2 to SN2sendSleepSignal" source="isAwake2" target="SN2sendSleepSignal">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="431" y="551" curvePoint="false"/>
+            <arcpath id="001" x="981" y="507" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsSN1CH to AggregateClusterData2" source="IsSN1CH" target="AggregateClusterData2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="612" y="66" curvePoint="false"/>
+            <arcpath id="001" x="467" y="106" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsSN1CH to SelectSN2asCH" source="IsSN1CH" target="SelectSN2asCH">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="615" y="71" curvePoint="false"/>
+            <arcpath id="001" x="527" y="144" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+        <arc id="IsSN2CH to AggregateClusterData1" source="IsSN2CH" target="AggregateClusterData1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="641" y="168" curvePoint="false"/>
+            <arcpath id="001" x="831" y="192" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="IsSN2CH to SelectSN1asCH" source="IsSN2CH" target="SelectSN1asCH">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="641" y="162" curvePoint="false"/>
+            <arcpath id="001" x="756" y="127" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+        <arc id="P12 to Aggregate" source="P12" target="Aggregate">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="357" y="109" curvePoint="false"/>
+            <arcpath id="001" x="287" y="109" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="P12 to sendAggrData" source="P12" target="sendAggrData">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="359" y="118" curvePoint="false"/>
+            <arcpath id="001" x="302" y="157" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ProceedTime to CurrentTIme" source="ProceedTime" target="CurrentTIme">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="916" y="42" curvePoint="false"/>
+            <arcpath id="001" x="972" y="42" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ProceedTime to TempTime" source="ProceedTime" target="TempTime">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="906" y="42" curvePoint="false"/>
+            <arcpath id="001" x="806" y="42" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SelectSN1asCH to IsSN1CH" source="SelectSN1asCH" target="IsSN1CH">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="757" y="117" curvePoint="false"/>
+            <arcpath id="001" x="640" y="67" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SelectSN2asCH to IsSN2CH" source="SelectSN2asCH" target="IsSN2CH">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="526" y="158" curvePoint="false"/>
+            <arcpath id="001" x="612" y="165" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="sendAggrData to ClusterData" source="sendAggrData" target="ClusterData">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="301" y="167" curvePoint="false"/>
+            <arcpath id="001" x="417" y="175" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="sendSN1SleepSignal to BS" source="sendSN1SleepSignal" target="BS">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="976" y="302" curvePoint="false"/>
+            <arcpath id="001" x="1111" y="436" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="sendSN1WakeUpSignal to BS" source="sendSN1WakeUpSignal" target="BS">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="976" y="362" curvePoint="false"/>
+            <arcpath id="001" x="1109" y="439" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="sendSN1WakeUpSignal to isAwake1" source="sendSN1WakeUpSignal" target="isAwake1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="966" y="357" curvePoint="false"/>
+            <arcpath id="001" x="836" y="330" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN1send to CollectedData" source="SN1send" target="CollectedData">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="301" y="272" curvePoint="false"/>
+            <arcpath id="001" x="642" y="367" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN1 to Aggregate" source="SN1" target="Aggregate">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="116" y="145" curvePoint="false"/>
+            <arcpath id="001" x="276" y="110" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN1 to sendAggrData" source="SN1" target="sendAggrData">
+            <graphics/>
+            <inscription>
+                <value/>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value/>
+            </tagged>
+            <arcpath id="000" x="116" y="149" curvePoint="false"/>
+            <arcpath id="001" x="291" y="162" curvePoint="false"/>
+            <type value="inhibitor"/>
+        </arc>
+        <arc id="SN1 to SN1send" source="SN1" target="SN1send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="114" y="155" curvePoint="false"/>
+            <arcpath id="001" x="291" y="267" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN2sendSleepSignal to BS" source="SN2sendSleepSignal" target="BS">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="991" y="512" curvePoint="false"/>
+            <arcpath id="001" x="1108" y="453" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN2send to CollectedData" source="SN2send" target="CollectedData">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="451" y="417" curvePoint="false"/>
+            <arcpath id="001" x="642" y="375" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN2sendWakeUpSignal to BS" source="SN2sendWakeUpSignal" target="BS">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="992" y="577" curvePoint="false"/>
+            <arcpath id="001" x="1111" y="457" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN2sendWakeUpSignal to isAwake2" source="SN2sendWakeUpSignal" target="isAwake2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="981" y="582" curvePoint="false"/>
+            <arcpath id="001" x="431" y="552" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="SN2 to SN2send" source="SN2" target="SN2send">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="296" y="444" curvePoint="false"/>
+            <arcpath id="001" x="441" y="417" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="TempTime to SelectSN1asCH" source="TempTime" target="SelectSN1asCH">
+            <graphics/>
+            <inscription>
+                <value>Default,5</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="785" y="55" curvePoint="false"/>
+            <arcpath id="001" x="762" y="107" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="TempTime to SelectSN2asCH" source="TempTime" target="SelectSN2asCH">
+            <graphics/>
+            <inscription>
+                <value>Default,5</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="778" y="47" curvePoint="false"/>
+            <arcpath id="001" x="527" y="151" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>

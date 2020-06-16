@@ -1,0 +1,1099 @@
+<?xml version="1.0" encoding="ISO-8859-1"?><pnml>
+    <net id="Net-One" type="P/T net">
+        <token id="Default" enabled="true" red="0" green="0" blue="0"/>
+        <labels x="710" y="56" width="208" height="161" border="true">
+            <text>Communication Subsystem of Node 1</text>
+        </labels>
+        <labels x="724" y="302" width="253" height="206" border="true">
+            <text>Communication Subsystem of Node 2</text>
+        </labels>
+        <labels x="37" y="22" width="928" height="210" border="true">
+            <text>Node 1</text>
+        </labels>
+        <labels x="28" y="279" width="958" height="240" border="true">
+            <text>Node 2</text>
+        </labels>
+        <labels x="416" y="52" width="223" height="163" border="true">
+            <text>Processor Subsystem of Node 1</text>
+        </labels>
+        <labels x="427" y="308" width="238" height="206" border="true">
+            <text>Processor Subsystem of Node 2</text>
+        </labels>
+        <labels x="54" y="48" width="313" height="165" border="true">
+            <text>Sensor Subsystem of Node 1 </text>
+        </labels>
+        <labels x="52" y="315" width="283" height="206" border="true">
+            <text>Sensor Subsystem of Node 2</text>
+        </labels>
+        <labels x="1032" y="37" width="118" height="57" border="true">
+            <text>Von Neumann Architecture For Processor Subsystem</text>
+        </labels>
+        <place id="ADC Node 1">
+            <graphics>
+                <position x="210.0" y="45.0"/>
+            </graphics>
+            <name>
+                <value>ADC Node 1</value>
+                <graphics>
+                    <offset x="28.0" y="50.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="ADC Node 2">
+            <graphics>
+                <position x="180.0" y="330.0"/>
+            </graphics>
+            <name>
+                <value>ADC Node 2</value>
+                <graphics>
+                    <offset x="42.0" y="48.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Base Station">
+            <graphics>
+                <position x="1440.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Base Station</value>
+                <graphics>
+                    <offset x="51.0" y="55.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cluster 1">
+            <graphics>
+                <position x="1275.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Cluster 1</value>
+                <graphics>
+                    <offset x="35.0" y="52.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Cluster 1 Data Aggregation">
+            <graphics>
+                <position x="1110.0" y="285.0"/>
+            </graphics>
+            <name>
+                <value>Cluster 1 Data Aggregation</value>
+                <graphics>
+                    <offset x="88.0" y="56.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Energy level">
+            <graphics>
+                <position x="435.0" y="150.0"/>
+            </graphics>
+            <name>
+                <value>Energy level</value>
+                <graphics>
+                    <offset x="48.0" y="41.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>5</value>
+            </capacity>
+        </place>
+        <place id="Energy Level">
+            <graphics>
+                <position x="450.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>Energy Level</value>
+                <graphics>
+                    <offset x="44.0" y="44.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>5</value>
+            </capacity>
+        </place>
+        <place id="Make Node 1 Head">
+            <graphics>
+                <position x="525.0" y="135.0"/>
+            </graphics>
+            <name>
+                <value>Make Node 1 Head</value>
+                <graphics>
+                    <offset x="66.0" y="51.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Make Node 2 Head">
+            <graphics>
+                <position x="570.0" y="450.0"/>
+            </graphics>
+            <name>
+                <value>Make Node 2 Head</value>
+                <graphics>
+                    <offset x="60.0" y="45.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Memory of Node 1">
+            <graphics>
+                <position x="420.0" y="75.0"/>
+            </graphics>
+            <name>
+                <value>Memory of Node 1</value>
+                <graphics>
+                    <offset x="64.0" y="50.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>5</value>
+            </capacity>
+        </place>
+        <place id="Memory of Node 2">
+            <graphics>
+                <position x="450.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>Memory of Node 2</value>
+                <graphics>
+                    <offset x="61.0" y="50.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>5</value>
+            </capacity>
+        </place>
+        <place id="Radio Transmitter of Node 1">
+            <graphics>
+                <position x="705.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>Radio Transmitter of Node 1</value>
+                <graphics>
+                    <offset x="72.0" y="65.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Radio Transmitter of Node 2">
+            <graphics>
+                <position x="750.0" y="375.0"/>
+            </graphics>
+            <name>
+                <value>Radio Transmitter of Node 2</value>
+                <graphics>
+                    <offset x="89.0" y="44.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Solar to Electrical Node 1">
+            <graphics>
+                <position x="150.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Solar to Electrical Node 1</value>
+                <graphics>
+                    <offset x="80.0" y="41.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <place id="Solar to Electrical Node 2">
+            <graphics>
+                <position x="165.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>Solar to Electrical Node 2</value>
+                <graphics>
+                    <offset x="84.0" y="41.0"/>
+                </graphics>
+            </name>
+            <initialMarking>
+                <value>Default,0</value>
+                <graphics>
+                    <offset x="0.0" y="0.0"/>
+                </graphics>
+            </initialMarking>
+            <capacity>
+                <value>0</value>
+            </capacity>
+        </place>
+        <transition id="Activate Custer 1">
+            <graphics>
+                <position x="1350.0" y="225.0"/>
+            </graphics>
+            <name>
+                <value>Activate Custer 1</value>
+                <graphics>
+                    <offset x="57.0" y="54.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Energy storing in Battery Node 1">
+            <graphics>
+                <position x="255.0" y="120.0"/>
+            </graphics>
+            <name>
+                <value>Energy storing in Battery Node 1</value>
+                <graphics>
+                    <offset x="96.0" y="67.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Energy Storing in Battery Node 2">
+            <graphics>
+                <position x="270.0" y="450.0"/>
+            </graphics>
+            <name>
+                <value>Energy Storing in Battery Node 2</value>
+                <graphics>
+                    <offset x="104.0" y="54.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Make Cluster 1 Node 1 Head">
+            <graphics>
+                <position x="1140.0" y="180.0"/>
+            </graphics>
+            <name>
+                <value>Make Cluster 1 Node 1 Head</value>
+                <graphics>
+                    <offset x="93.0" y="55.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Make Cluster 1 Node 2 Head">
+            <graphics>
+                <position x="1155.0" y="450.0"/>
+            </graphics>
+            <name>
+                <value>Make Cluster 1 Node 2 Head</value>
+                <graphics>
+                    <offset x="95.0" y="48.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Make Node 1 Head ">
+            <graphics>
+                <position x="525.0" y="75.0"/>
+            </graphics>
+            <name>
+                <value>Make Node 1 Head </value>
+                <graphics>
+                    <offset x="79.0" y="48.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Make Node 2 Head">
+            <graphics>
+                <position x="600.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>Make Node 2 Head</value>
+                <graphics>
+                    <offset x="63.0" y="49.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Radio signal of Cluster Data from Node 1">
+            <graphics>
+                <position x="855.0" y="90.0"/>
+            </graphics>
+            <name>
+                <value>Radio signal of Cluster Data from Node 1</value>
+                <graphics>
+                    <offset x="108.0" y="77.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Radio Signal of Cluster Data from Node 2">
+            <graphics>
+                <position x="885.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>Radio Signal of Cluster Data from Node 2</value>
+                <graphics>
+                    <offset x="138.0" y="52.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Sensor Data of Node 1">
+            <graphics>
+                <position x="285.0" y="45.0"/>
+            </graphics>
+            <name>
+                <value>Sensor Data of Node 1</value>
+                <graphics>
+                    <offset x="72.0" y="54.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Sensor Data of Node 2">
+            <graphics>
+                <position x="270.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>Sensor Data of Node 2</value>
+                <graphics>
+                    <offset x="77.0" y="50.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Solar Energy for Node 1">
+            <graphics>
+                <position x="45.0" y="135.0"/>
+            </graphics>
+            <name>
+                <value>Solar Energy for Node 1</value>
+                <graphics>
+                    <offset x="88.0" y="48.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Solar Energy Node2">
+            <graphics>
+                <position x="75.0" y="435.0"/>
+            </graphics>
+            <name>
+                <value>Solar Energy Node2</value>
+                <graphics>
+                    <offset x="57.0" y="54.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="TemperatureData for Node 1">
+            <graphics>
+                <position x="60.0" y="60.0"/>
+            </graphics>
+            <name>
+                <value>TemperatureData for Node 1</value>
+                <graphics>
+                    <offset x="103.0" y="41.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <transition id="Temperature Data for Node 2">
+            <graphics>
+                <position x="75.0" y="345.0"/>
+            </graphics>
+            <name>
+                <value>Temperature Data for Node 2</value>
+                <graphics>
+                    <offset x="100.0" y="41.0"/>
+                </graphics>
+            </name>
+            <orientation>
+                <value>0</value>
+            </orientation>
+            <rate>
+                <value>1.0</value>
+            </rate>
+            <timed>
+                <value>false</value>
+            </timed>
+            <infiniteServer>
+                <value>false</value>
+            </infiniteServer>
+            <priority>
+                <value>1</value>
+            </priority>
+        </transition>
+        <arc id="Activate Custer 1 to Cluster 1" source="Activate Custer 1" target="Cluster 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1355" y="236" curvePoint="false"/>
+            <arcpath id="001" x="1300" y="236" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ADC Node 1 to Sensor Data of Node 1" source="ADC Node 1" target="Sensor Data of Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="235" y="56" curvePoint="false"/>
+            <arcpath id="001" x="290" y="56" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="ADC Node 2 to Sensor Data of Node 2" source="ADC Node 2" target="Sensor Data of Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="205" y="343" curvePoint="false"/>
+            <arcpath id="001" x="275" y="356" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Base Station to Activate Custer 1" source="Base Station" target="Activate Custer 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1436" y="236" curvePoint="false"/>
+            <arcpath id="001" x="1365" y="236" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cluster 1 to Make Cluster 1 Node 1 Head" source="Cluster 1" target="Make Cluster 1 Node 1 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1271" y="231" curvePoint="false"/>
+            <arcpath id="001" x="1155" y="191" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Cluster 1 to Make Cluster 1 Node 2 Head" source="Cluster 1" target="Make Cluster 1 Node 2 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1278" y="248" curvePoint="false"/>
+            <arcpath id="001" x="1166" y="446" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Energy Level to Make Node 2 Head" source="Energy Level" target="Make Node 2 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="475" y="447" curvePoint="false"/>
+            <arcpath id="001" x="566" y="458" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Energy Level to Make Node 2 Head" source="Energy Level" target="Make Node 2 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="473" y="437" curvePoint="false"/>
+            <arcpath id="001" x="605" y="361" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Energy Storing in Battery Node 2 to Energy Level" source="Energy Storing in Battery Node 2" target="Energy Level">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="285" y="461" curvePoint="false"/>
+            <arcpath id="001" x="446" y="447" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Make Cluster 1 Node 1 Head to Make Node 1 Head" source="Make Cluster 1 Node 1 Head" target="Make Node 1 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1145" y="191" curvePoint="false"/>
+            <arcpath id="001" x="550" y="146" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Make Cluster 1 Node 2 Head to Make Node 2 Head" source="Make Cluster 1 Node 2 Head" target="Make Node 2 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="1160" y="461" curvePoint="false"/>
+            <arcpath id="001" x="596" y="461" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Make Node 1 Head to Make Node 1 Head " source="Make Node 1 Head" target="Make Node 1 Head ">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="536" y="131" curvePoint="false"/>
+            <arcpath id="001" x="536" y="101" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Make Node 1 Head  to Radio Transmitter of Node 1" source="Make Node 1 Head " target="Radio Transmitter of Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="540" y="86" curvePoint="false"/>
+            <arcpath id="001" x="701" y="98" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Make Node 2 Head to Make Node 2 Head" source="Make Node 2 Head" target="Make Node 2 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="585" y="446" curvePoint="false"/>
+            <arcpath id="001" x="611" y="371" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Make Node 2 Head to Radio Transmitter of Node 2" source="Make Node 2 Head" target="Radio Transmitter of Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="615" y="356" curvePoint="false"/>
+            <arcpath id="001" x="746" y="382" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Memory of Node 1 to Make Node 1 Head " source="Memory of Node 1" target="Make Node 1 Head ">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="445" y="86" curvePoint="false"/>
+            <arcpath id="001" x="530" y="86" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Memory of Node 2 to Make Node 2 Head" source="Memory of Node 2" target="Make Node 2 Head">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="475" y="356" curvePoint="false"/>
+            <arcpath id="001" x="606" y="351" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Radio signal of Cluster Data from Node 1 to Cluster 1 Data Aggregation" source="Radio signal of Cluster Data from Node 1" target="Cluster 1 Data Aggregation">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="870" y="101" curvePoint="false"/>
+            <arcpath id="001" x="1108" y="286" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Radio Signal of Cluster Data from Node 2 to Cluster 1 Data Aggregation" source="Radio Signal of Cluster Data from Node 2" target="Cluster 1 Data Aggregation">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="900" y="356" curvePoint="false"/>
+            <arcpath id="001" x="1106" y="300" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Radio Transmitter of Node 1 to Radio signal of Cluster Data from Node 1" source="Radio Transmitter of Node 1" target="Radio signal of Cluster Data from Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="730" y="101" curvePoint="false"/>
+            <arcpath id="001" x="860" y="101" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Radio Transmitter of Node 2 to Radio Signal of Cluster Data from Node 2" source="Radio Transmitter of Node 2" target="Radio Signal of Cluster Data from Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="775" y="382" curvePoint="false"/>
+            <arcpath id="001" x="890" y="356" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Sensor Data of Node 1 to Memory of Node 1" source="Sensor Data of Node 1" target="Memory of Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="300" y="56" curvePoint="false"/>
+            <arcpath id="001" x="416" y="82" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Sensor Data of Node 2 to Memory of Node 2" source="Sensor Data of Node 2" target="Memory of Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="285" y="356" curvePoint="false"/>
+            <arcpath id="001" x="446" y="356" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Solar Energy for Node 1 to Solar to Electrical Node 1" source="Solar Energy for Node 1" target="Solar to Electrical Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="60" y="146" curvePoint="false"/>
+            <arcpath id="001" x="146" y="132" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Solar Energy Node2 to Solar to Electrical Node 2" source="Solar Energy Node2" target="Solar to Electrical Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="90" y="446" curvePoint="false"/>
+            <arcpath id="001" x="161" y="446" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Solar to Electrical Node 1 to Energy storing in Battery Node 1" source="Solar to Electrical Node 1" target="Energy storing in Battery Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="175" y="131" curvePoint="false"/>
+            <arcpath id="001" x="260" y="131" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Solar to Electrical Node 2 to Energy Storing in Battery Node 2" source="Solar to Electrical Node 2" target="Energy Storing in Battery Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="190" y="447" curvePoint="false"/>
+            <arcpath id="001" x="275" y="461" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="TemperatureData for Node 1 to ADC Node 1" source="TemperatureData for Node 1" target="ADC Node 1">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="75" y="71" curvePoint="false"/>
+            <arcpath id="001" x="206" y="57" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+        <arc id="Temperature Data for Node 2 to ADC Node 2" source="Temperature Data for Node 2" target="ADC Node 2">
+            <graphics/>
+            <inscription>
+                <value>Default,1</value>
+                <graphics/>
+            </inscription>
+            <tagged>
+                <value>false</value>
+            </tagged>
+            <arcpath id="000" x="90" y="356" curvePoint="false"/>
+            <arcpath id="001" x="176" y="342" curvePoint="false"/>
+            <type value="normal"/>
+        </arc>
+    </net>
+</pnml>
